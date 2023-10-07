@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     public float laneDistance = 2.5f;//The distance between tow lanes
 
     //VERTICAL
-    bool isGrounded;
+    public  bool isGrounded;
     public float gravity = -12f;
     public float jumpHeight = 2;
     private Vector3 velocity;
@@ -32,10 +32,11 @@ public class PlayerMovement : MonoBehaviour
 
     //COLLISION
     private bool alreadyHit = false;
-    private bool isMovable;
+    [HideInInspector] public bool isMovable;
   
-    [SerializeField] Animator animator;
-     GameManager gameManager;
+    [SerializeField] public Animator animator;
+    GameManager gameManager;
+    bool isMoving;
 
     private void Start()
     {
@@ -51,8 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
             move.z = forwardSpeed;
             if (forwardSpeed < maxSpeed) { maxSpeed += forwardSpeedMultiplier * Time.deltaTime; }
-
-            animator.SetFloat("Speed", Mathf.Clamp(initialAnimationSpeed += 0.001f * Time.deltaTime, initialAnimationSpeed, 1f));
+            animator.SetFloat("Speed", Mathf.Clamp(initialAnimationSpeed += 0.001f * Time.deltaTime , initialAnimationSpeed, 1f));
             animator.SetBool("Ground", isGrounded);
             if (isGrounded && velocity.y < 0)
                 velocity.y = -1f;
@@ -68,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
             else
             {
                 velocity.y += gravity * Time.deltaTime;
-                if (SwipeManager.swipeDown && !isSliding)
+                if (SwipeManager.swipeDown && !isSliding && isGrounded)
                 {
                     StartCoroutine(Slide());
                     //  velocity.y = -10;
@@ -121,15 +121,19 @@ public class PlayerMovement : MonoBehaviour
         isSliding = false;
         velocity.y = Mathf.Sqrt(jumpHeight * 2 * -gravity);
         isGrounded = false;
-       
     }
 
     private IEnumerator Slide()
     {
         isSliding = true;
         animator.SetTrigger("Slide");
+        controller.center = new Vector3(0,0.1f, 0);
+        controller.height = 1.2f;
         yield return new WaitForSeconds(slideDuration);
         animator.SetTrigger("Run");
+        yield return new WaitForSeconds((slideDuration - 0.25f) / Time.timeScale);
+        controller.center = new Vector3(0, 0, 0);
+        controller.height = 2f;
         isSliding = false;
     }
 

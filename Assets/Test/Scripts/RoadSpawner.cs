@@ -6,6 +6,7 @@ using UnityEngine;
 public class RoadSpawner : MonoBehaviour
 {
     [SerializeField] List<GameObject> roads;
+    List<GameObject> roadTile;
     [SerializeField] float tileOffset = 60f;
     void Start()
     {
@@ -15,14 +16,19 @@ public class RoadSpawner : MonoBehaviour
         }
     }
 
+    public void Loadmap(List<GameObject> map)
+    {
+
+    }
+
     public void MoveRoad()
     {
         GameObject movedRoad = roads[0];
         roads.Remove(movedRoad);
         float newZ = roads[roads.Count - 1].transform.position.z + tileOffset;
         movedRoad.gameObject.GetComponent<ObstacleSpawner>().SpawnObstacle();
-       movedRoad.gameObject.GetComponent<CoinSpawner>().SpawnCoins();
+        movedRoad.gameObject.GetComponent<CoinSpawner>().SpawnCoins();
         movedRoad.transform.position = new Vector3(0, 0, newZ);
-        roads.Add(movedRoad);  
+        roads.Add(movedRoad);
     }
 }

@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
         {
 
             move.z = forwardSpeed;
-            if (forwardSpeed < maxSpeed) { maxSpeed += forwardSpeedMultiplier * Time.deltaTime; }
+            if (forwardSpeed < maxSpeed) { forwardSpeed += forwardSpeedMultiplier * Time.deltaTime; }
             animator.SetFloat("Speed", Mathf.Clamp(initialAnimationSpeed += 0.001f * Time.deltaTime , initialAnimationSpeed, 1f));
             animator.SetBool("Ground", isGrounded);
             if (isGrounded && velocity.y < 0)

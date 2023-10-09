@@ -6,7 +6,7 @@ public class CoinSpawner : MonoBehaviour
 {
     [SerializeField] GameObject coinPrefab;
     [SerializeField] int maxCoinCount = 10, minCoinCount = 5;
-    [SerializeField]  float widthOffset,heightOffset;
+    [SerializeField]  float widthOffset = 0.5f,heightOffset =1f;
     GameObject[] coins;
     private void Awake()
     {

@@ -7,19 +7,22 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] GameObject player;
+    PlayerMovement playerMovement;
     [SerializeField] UIManager UIManager;
     [SerializeField] RoadSpawner RoadSpawner;
     [SerializeField] TextMeshProUGUI coinCountText,totalCoin,collectibleCountText;
-    [SerializeField] float gameOverDelay = 2.8f, collectibleDelay;
+    [SerializeField] float gameOverDelay = 2.8f, collectibleDelay,collectibleMapDuration;
     [SerializeField] GameObject collectibleUi;
-    Image collectibleIcon;
-    TextMeshProUGUI collectibleName,collectibleInfo;
+    [SerializeField] Image collectibleUiImage;
+    [SerializeField] TextMeshProUGUI collectibleName,collectibleInfo;
     List<GameObject> collectibleMap;
-    [SerializeField] List<GameObject> road;
+    GameObject collectiblePlatfrom;
+   // [SerializeField] List<GameObject> road;
     public static int coinCount, totalCoinCount,collectibleCount;
     void Start()
     {
-    
+        playerMovement = player.GetComponent<PlayerMovement>();
         coinCount = 0;
         UIManager.EnablePanel("HudPanel");
 
@@ -72,13 +75,16 @@ public class GameManager : MonoBehaviour
     public void CollectibleUiOpen()
     {
         UIManager.EnablePanel("SpecialCollectiblePanel");
+        playerMovement.isMovable = false;
+        playerMovement.animator.SetFloat("Speed", 0);
     }
 
-    public void LoadCollectibleData(string name,Image image,string info,List<GameObject> map)
+    public void LoadCollectibleData(string name,Sprite image,string info,GameObject platform,List<GameObject>map)
     {
         collectibleName.text = name;
-        collectibleIcon = image;
+        collectibleUiImage.sprite = image;
         collectibleInfo.text = info;
+        collectiblePlatfrom = platform;
         collectibleMap = map;
     }
     public void CollectibleClose()
@@ -88,14 +94,19 @@ public class GameManager : MonoBehaviour
 
     IEnumerator ChangeMap()
     {
-
-        yield return new WaitForSeconds(collectibleDelay);
+        RoadSpawner.LoadCollectibleMap(collectiblePlatfrom,collectibleMap);
+        yield return new WaitForSeconds(collectibleMapDuration);
+        RoadSpawner.LoadOriginalMap();
+      
     }
     IEnumerator CollectibleUiClose()
     {
         UIManager.EnablePanel("HudPanel");
-        //Load map
+        StartCoroutine(ChangeMap());    
         yield return new WaitForSeconds(collectibleDelay);
+        playerMovement.isMovable = true;
+        playerMovement.forwardSpeed = 8f;
+        playerMovement.animator.SetFloat("Speed", playerMovement.initialAnimationSpeed);
         CollectibleUpdate();
     }
 }

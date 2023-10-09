@@ -5,8 +5,8 @@ using UnityEngine;
 public class ObstacleSpawner : MonoBehaviour
 {
     [SerializeField] GameObject[] obstaclePrefab = new GameObject[2];
-    [SerializeField] int maxObstacleCount = 2, minObstacleCount = 0;
-    [SerializeField] float widthOffset;
+    [SerializeField] int maxObstacleCount = 3, minObstacleCount = 1;
+    [SerializeField] float widthOffset=1;
     GameObject[] obstacles;
     void Awake()
     {

@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class CollectibleData : MonoBehaviour
 {
     [SerializeField] string name, info;
-    [SerializeField] Image image;
-    [SerializeField] List<GameObject> map;
+    [SerializeField] Sprite image;
+    public List<GameObject> map;
+    [SerializeField] GameObject platform;
+    [SerializeField] float tileOffset = 30f;
     GameManager gameManager;
     private void Start()
     {
@@ -16,6 +18,7 @@ public class CollectibleData : MonoBehaviour
     
     public void LoadData()
     {
-        gameManager.LoadCollectibleData(name,image, name, map);
+        gameManager.LoadCollectibleData(name,image, info,platform,map);
+        gameManager.CollectibleUiOpen();
     }
 }

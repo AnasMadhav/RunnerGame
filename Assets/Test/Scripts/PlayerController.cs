@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] SpawnManager spawnManager;
+    [SerializeField] RoadSpawner roadSpawner;
     PlayerMovements playerMovements;
     void Start()
     {
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("SpawnTrigger"))
         {
             spawnManager.SpawnTriggered();
+            roadSpawner.lastSpawnTriggeredPos = other.gameObject.transform.position.z;
         }
     }
 }

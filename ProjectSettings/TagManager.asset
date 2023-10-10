@@ -9,6 +9,7 @@ TagManager:
   - GameManager
   - Obstacle
   - Coin
+  - SpawnManager
   layers:
   - Default
   - TransparentFX

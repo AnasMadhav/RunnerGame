@@ -11,20 +11,20 @@ public class GameManager : MonoBehaviour
     PlayerMovement playerMovement;
     [SerializeField] UIManager UIManager;
     [SerializeField] RoadSpawner RoadSpawner;
-    [SerializeField] TextMeshProUGUI coinCountText,totalCoin,collectibleCountText;
+    [SerializeField] TextMeshProUGUI coinCountText,totalCoin,collectibleCountText,timerCountText,healthCountText;
     [SerializeField] float gameOverDelay = 2.8f, collectibleDelay,collectibleMapDuration;
     [SerializeField] GameObject collectibleUi;
     [SerializeField] Image collectibleUiImage;
     [SerializeField] TextMeshProUGUI collectibleName,collectibleInfo;
     List<GameObject> collectibleMap;
     GameObject collectiblePlatfrom;
-   // [SerializeField] List<GameObject> road;
     public static int coinCount, totalCoinCount,collectibleCount;
     void Start()
     {
         playerMovement = player.GetComponent<PlayerMovement>();
         coinCount = 0;
         UIManager.EnablePanel("HudPanel");
+
 
         if(!PlayerPrefs.HasKey("Coin1"))
         {
@@ -61,7 +61,20 @@ public class GameManager : MonoBehaviour
         collectibleCountText.text = collectibleCount.ToString();
     }
 
+    public void TimerUpdate()
+    {
+        timerCountText.text = playerMovement.currentTime.ToString("0");
+    }
+    public void DisableTimer()
+    {
+        timerCountText.enabled = false; 
+    }
+
     //---------------------------------GAMEPLAY---------------------------------------------
+   public void HealthUpdate(int health)
+   {
+        healthCountText.text = health.ToString();
+   }
     public void GameOver()
     {
         StartCoroutine(GameOverUi());

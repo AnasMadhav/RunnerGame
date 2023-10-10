@@ -39,10 +39,10 @@ public class ObstacleSpawner : MonoBehaviour
         }
     }
     Vector3 GetObstaclePosition(Collider collider)
-   {
+    {
        Vector3 point = new Vector3(Random.Range(collider.bounds.min.x + widthOffset, collider.bounds.max.x - widthOffset), collider.bounds.min.y,
           Random.Range(collider.bounds.min.z, collider.bounds.max.z));
        return point;
-   }
-}
+    }
+} 
 

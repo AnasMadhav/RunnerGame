@@ -31,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
     public float slideDuration = 1.5f;
 
     //COLLISION
+    [SerializeField] int playerMaxHp = 3;
+    public int playerCurrentHp;
     private bool alreadyHit = false;
     [HideInInspector] public bool isMovable;
   
@@ -38,11 +40,20 @@ public class PlayerMovement : MonoBehaviour
     GameManager gameManager;
     bool isMoving;
 
+    [SerializeField] float maxTime = 3f;
+    [HideInInspector] public float currentTime = 0;
+
     private void Start()
     {
         controller = GetComponent<CharacterController>();
         gameManager = GameObject.FindWithTag("GameManager").gameObject.GetComponent<GameManager>();
-        isMovable = true;
+
+        playerCurrentHp = playerMaxHp;
+        gameManager.HealthUpdate(playerCurrentHp);
+        isMovable = false;
+        currentTime = maxTime;
+        StartCoroutine(CountTimer());
+
     }
 
     private void Update()
@@ -142,15 +153,40 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = hit.gameObject.CompareTag("Ground");
 
         if (alreadyHit) return;
-        if (hit.gameObject.CompareTag("Obstacle"))
-        {
-            alreadyHit = true;
-            animator.SetTrigger("Hit");
-            isMovable = false;
-            gameManager.GameOver();
-        }
-    }
+            if (hit.gameObject.CompareTag("Obstacle"))
+            {
+                if (playerCurrentHp > 0)
+                {
+                    alreadyHit = true;
+                    hit.gameObject.GetComponent<Collider>().isTrigger = true;
+                    hit.gameObject.GetComponent<Animator>().SetTrigger("Hit");
+                    playerCurrentHp--;
+                    gameManager.HealthUpdate(playerCurrentHp);
+                    alreadyHit = false;
+                }
+                else
+                {
+                    alreadyHit = true;
+                    animator.SetTrigger("Hit");
+                    isMovable = false;
+                    gameManager.GameOver();
+                }
+            }
 
+       
+    }
+    IEnumerator CountTimer()
+    {
+        while(currentTime>0)
+        {
+            gameManager.TimerUpdate();
+            currentTime -= 1;
+            yield return new WaitForSeconds(1f);
+        }
+        gameManager.DisableTimer();
+        isMovable = true;
+     //   yield return null;
+    }
 
     private void FixedUpdate()
     {

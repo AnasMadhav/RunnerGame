@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("SpawnTrigger"))
         {
             spawnManager.SpawnTriggered();
-            roadSpawner.lastSpawnTriggeredPos = other.gameObject.transform.position.z;
+            roadSpawner.lastSpawnTriggeredPos = other.gameObject.transform.parent.position.z;
         }
     }
 }

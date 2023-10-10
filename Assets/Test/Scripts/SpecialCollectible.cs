@@ -6,9 +6,11 @@ public class SpecialCollectible : MonoBehaviour
 {
     [SerializeField] GameObject brokenGlass;
     CollectibleData CollectibleData;
+    SpecialsSpawner SpecialsSpawner;
     void Start()
     {
       CollectibleData = GetComponent<CollectibleData>();
+      SpecialsSpawner = GameObject.FindWithTag("SpawnManager").gameObject.GetComponent<SpecialsSpawner>();
     }
 
     void Update()
@@ -23,7 +25,7 @@ public class SpecialCollectible : MonoBehaviour
             Instantiate(brokenGlass, transform.position, transform.rotation);
             Destroy(gameObject);
             CollectibleData.LoadData();
-            
+            SpecialsSpawner.RemoveCollectible(gameObject);
         }
     }
 

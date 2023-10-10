@@ -6,7 +6,7 @@ using UnityEngine;
 public class RoadSpawner : MonoBehaviour
 {
     [SerializeField] GameObject platforms;
-    [SerializeField] List<GameObject> roads;
+     List<GameObject> roads;
     [SerializeField] List<GameObject> roadTile;
     [SerializeField] float tileOffset = 30f;
     [SerializeField] public float lastSpawnTriggeredPos;
@@ -16,11 +16,11 @@ public class RoadSpawner : MonoBehaviour
     {
         specialsSpawner = gameObject.GetComponent<SpecialsSpawner>();
         roads = roadTile;
-        ObstacleRemoveAtInitial(roads[1]);
         if(roads != null && roads.Count > 0)
         {
             roads = roads.OrderBy(r => r.transform.position.z).ToList();
         }
+        ObstacleRemoveAtInitial(roads[1]);
     }
 
     public void LoadCollectibleMap(GameObject platform,List<GameObject>map)
@@ -28,34 +28,27 @@ public class RoadSpawner : MonoBehaviour
         roads.Clear();
         platforms.SetActive(false);
         spawnRoad =  Instantiate(platform);
-        if (roads != null && roads.Count > 0)
-        {
-            roads = roads.OrderBy(r => r.transform.position.z).ToList();
-        }
         for (int i = 0; i < spawnRoad.transform.childCount; i++)
         {
             roads.Add(spawnRoad.transform.GetChild(i).gameObject);
-            roads[i].transform.position = (Vector3.forward * tileOffset * i) + Vector3.forward * lastSpawnTriggeredPos;
+            roads[i].transform.position = Vector3.forward * (lastSpawnTriggeredPos + (tileOffset * i));
         }
         ObstacleRemoveAtInitial(roads[1]);
     }
     public void LoadOriginalMap()
     {
         Destroy(spawnRoad);
-        platforms.SetActive(true);
         roads.Clear();
-        roads = roadTile;
+        platforms.SetActive(true);
+      //  roads = roadTile;
+        for (int i = 0; i < roadTile.Count; i++)
+        {
+            roads.Add(platforms.transform.GetChild(i).gameObject);
+            roads[i].transform.position = Vector3.forward* (lastSpawnTriggeredPos + (tileOffset* i-1));
+        }
         if (roads != null && roads.Count > 0)
         {
             roads = roads.OrderBy(r => r.transform.position.z).ToList();
-        }
-        for(int i = 0; i < roadTile.Count; i++)
-        {
-            roads[i].transform.position = (Vector3.forward * tileOffset * i) + Vector3.forward * lastSpawnTriggeredPos;
-        }
-        foreach (GameObject road in roads)
-        {
-           // road.transform.position += Vector3.forward * lastSpawnTriggeredPos;
         }
         ObstacleRemoveAtInitial(roads[1]);
     }

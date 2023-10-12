@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 3748765443104449126}
   - component: {fileID: 4061538987194205841}
   - component: {fileID: 1967566504234492242}
-  - component: {fileID: 5707734209009946044}
   - component: {fileID: 6511225070231580316}
+  - component: {fileID: 5707734209009946044}
   - component: {fileID: 8286644462037237514}
   m_Layer: 0
   m_Name: Metro
@@ -87,19 +87,6 @@ CapsuleCollider:
   m_Height: 1.84
   m_Direction: 1
   m_Center: {x: 0, y: 0.73, z: 0}
---- !u!114 &5707734209009946044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5282412006419943907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db1d260f56a0bc64db846c4302c5d5f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  brokenGlass: {fileID: 2662013474307350691, guid: 6e712fce1e92db94caad73b49cd4f5b1, type: 3}
 --- !u!95 &6511225070231580316
 Animator:
   serializedVersion: 5
@@ -121,6 +108,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5707734209009946044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5282412006419943907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1d260f56a0bc64db846c4302c5d5f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brokenGlass: {fileID: 2662013474307350691, guid: 6e712fce1e92db94caad73b49cd4f5b1, type: 3}
 --- !u!114 &8286644462037237514
 MonoBehaviour:
   m_ObjectHideFlags: 0

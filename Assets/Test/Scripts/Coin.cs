@@ -27,10 +27,27 @@ public class Coin : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+      //  if (other.gameObject.CompareTag("Magnet"))
+        {
+         //   StartCoroutine(AttractToPlayer(gameObject));
+        //    Debug.Log("Magnet");
+        }
+
         if (other.gameObject.CompareTag("Player"))
         {
             gameManager.CoinUpdate();
+
             Destroy(gameObject);
         }
+    }
+
+    IEnumerator AttractToPlayer(GameObject player)
+    {
+        while (gameObject.activeInHierarchy)
+        {
+            gameObject.transform.Translate(player.transform.position);
+           
+        }
+        yield return null;
     }
 }

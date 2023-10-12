@@ -154,8 +154,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefab:
-  - {fileID: 1214492837578685549, guid: a21173e5be4d2e249931619c4c253006, type: 3}
-  - {fileID: 9219188071692057757, guid: 964a9b75e0bdfba4699902c131ddb666, type: 3}
+  - {fileID: 1780459250618503040, guid: c798bc74bb9802440a8643daebb68466, type: 3}
+  - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
+  - {fileID: 1545637446773528302, guid: 37ff10f63d111454f865b99603fd3c8f, type: 3}
+  - {fileID: 3679488196697164996, guid: 7dd6591f60be81f409d8c00be0f78f04, type: 3}
+  - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
+  - {fileID: 5711720310490355914, guid: c6604adc29c32b342b90edf64f5ab578, type: 3}
   maxObstacleCount: 3
   minObstacleCount: 1
   widthOffset: 1

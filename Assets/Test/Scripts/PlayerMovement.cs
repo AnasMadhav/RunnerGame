@@ -93,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 desiredLane++;
                 if (desiredLane == 3)
-                    desiredLane = 2;
+                   desiredLane = 2;
             }
             if (SwipeManager.swipeLeft)
             {
@@ -101,6 +101,7 @@ public class PlayerMovement : MonoBehaviour
                 if (desiredLane == -1)
                     desiredLane = 0;
             }
+           // desiredLane = Mathf.Clamp(desiredLane, 0, 2);
 
             //Calculate where we should be in the future
             Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
@@ -139,7 +140,7 @@ public class PlayerMovement : MonoBehaviour
         isSliding = true;
         animator.SetTrigger("Slide");
         controller.center = new Vector3(0,0.1f, 0);
-        controller.height = 1.2f;
+        controller.height = 0.5f;
         yield return new WaitForSeconds(slideDuration);
         animator.SetTrigger("Run");
         yield return new WaitForSeconds((slideDuration - 0.25f) / Time.timeScale);
@@ -155,14 +156,16 @@ public class PlayerMovement : MonoBehaviour
         if (alreadyHit) return;
             if (hit.gameObject.CompareTag("Obstacle"))
             {
+            Debug.Log("Hit");
                 if (playerCurrentHp > 0)
                 {
-                    alreadyHit = true;
-                    hit.gameObject.GetComponent<Collider>().isTrigger = true;
+                  //  alreadyHit = true;
+                    hit.gameObject.GetComponent<Collider>().enabled = false;
                     hit.gameObject.GetComponent<Animator>().SetTrigger("Hit");
+                    Destroy(hit.gameObject,3f);
                     playerCurrentHp--;
                     gameManager.HealthUpdate(playerCurrentHp);
-                    alreadyHit = false;
+                   // alreadyHit = false;
                 }
                 else
                 {

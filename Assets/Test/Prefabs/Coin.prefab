@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 618208614589023065}
   - component: {fileID: 1372331141113857621}
   - component: {fileID: -5812580465685302337}
+  - component: {fileID: 2285496050639644414}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Coin
@@ -142,3 +143,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e02a8d6e2fc12b4bac68a1c11b607ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &2285496050639644414
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3662905179039225336}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

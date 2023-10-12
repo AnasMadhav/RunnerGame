@@ -23,6 +23,7 @@ public class SpecialCollectible : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             Instantiate(brokenGlass, transform.position, transform.rotation);
+            PlayerPrefs.SetInt(gameObject.name, 1);
             Destroy(gameObject);
             CollectibleData.LoadData();
             SpecialsSpawner.RemoveCollectible(gameObject);

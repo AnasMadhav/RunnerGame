@@ -52,8 +52,20 @@ PrefabInstance:
       value: Fire_Truck
       objectReference: {fileID: 0}
     - target: {fileID: 8008091112726679720, guid: 3579b6a191a6262488eca857742b994d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.86445117
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008091112726679720, guid: 3579b6a191a6262488eca857742b994d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.86445117
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008091112726679720, guid: 3579b6a191a6262488eca857742b994d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.86445117
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008091112726679720, guid: 3579b6a191a6262488eca857742b994d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.2
+      value: 3.65
       objectReference: {fileID: 0}
     - target: {fileID: 8008091112726679720, guid: 3579b6a191a6262488eca857742b994d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -91,7 +103,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -515430796617944487, guid: 3579b6a191a6262488eca857742b994d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -176,8 +189,20 @@ PrefabInstance:
       value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 2528055771141382573, guid: 8d1af90125950e342999c5dbdefdd676, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8156585
+      objectReference: {fileID: 0}
+    - target: {fileID: 2528055771141382573, guid: 8d1af90125950e342999c5dbdefdd676, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8156585
+      objectReference: {fileID: 0}
+    - target: {fileID: 2528055771141382573, guid: 8d1af90125950e342999c5dbdefdd676, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8156585
+      objectReference: {fileID: 0}
+    - target: {fileID: 2528055771141382573, guid: 8d1af90125950e342999c5dbdefdd676, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.08
       objectReference: {fileID: 0}
     - target: {fileID: 2528055771141382573, guid: 8d1af90125950e342999c5dbdefdd676, type: 3}
       propertyPath: m_LocalPosition.y
@@ -219,7 +244,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ambulance
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1410658078327481453, guid: 8d1af90125950e342999c5dbdefdd676, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -239,7 +265,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1211657062968057523, guid: 23b3ee2b372b87943a6cbce286749574, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.8
+      value: 1.91
       objectReference: {fileID: 0}
     - target: {fileID: 1211657062968057523, guid: 23b3ee2b372b87943a6cbce286749574, type: 3}
       propertyPath: m_LocalPosition.y

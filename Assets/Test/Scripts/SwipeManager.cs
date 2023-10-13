@@ -5,6 +5,7 @@ public class SwipeManager : MonoBehaviour
     public static bool tap, swipeLeft, swipeRight, swipeUp, swipeDown;
     private bool isDraging = false;
     private Vector2 startTouch, swipeDelta;
+    public float swipeMagnitude = 50;
 
     private void Update()
     {
@@ -51,7 +52,7 @@ public class SwipeManager : MonoBehaviour
         }
 
         //Did we cross the distance?
-        if (swipeDelta.magnitude > 100)
+        if (swipeDelta.magnitude > swipeMagnitude)
         {
             //Which direction?
             float x = swipeDelta.x;

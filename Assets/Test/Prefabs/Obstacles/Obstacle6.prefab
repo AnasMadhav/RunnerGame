@@ -52,8 +52,20 @@ PrefabInstance:
       value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 2031118511716389517, guid: 24eb5806c8697f54eb4dc7f578f400e1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.91161
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031118511716389517, guid: 24eb5806c8697f54eb4dc7f578f400e1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.91161
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031118511716389517, guid: 24eb5806c8697f54eb4dc7f578f400e1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.91161
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031118511716389517, guid: 24eb5806c8697f54eb4dc7f578f400e1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.5
+      value: 1.69
       objectReference: {fileID: 0}
     - target: {fileID: 2031118511716389517, guid: 24eb5806c8697f54eb4dc7f578f400e1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -95,7 +107,8 @@ PrefabInstance:
       propertyPath: m_ExcludeLayers.m_Bits
       value: 128
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3012590294386581020, guid: 24eb5806c8697f54eb4dc7f578f400e1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

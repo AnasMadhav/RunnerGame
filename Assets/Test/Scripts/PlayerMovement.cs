@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     public  bool isGrounded;
     public float gravity = -12f;
     public float jumpHeight = 2;
-    private Vector3 velocity;
+    public  Vector3 velocity;
     
     //SLIDING
     private bool isSliding = false;
@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
     bool isMoving;
 
     [SerializeField] float maxTime = 3f;
-    [HideInInspector] public float currentTime = 0;
+     public float currentTime = 0;
 
     private void Start()
     {
@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
                 if (SwipeManager.swipeDown && !isSliding && isGrounded)
                 {
                     StartCoroutine(Slide());
-                    //  velocity.y = -10;
+                    velocity.y = -10;
                 }
 
             }
@@ -101,7 +101,6 @@ public class PlayerMovement : MonoBehaviour
                 if (desiredLane == -1)
                     desiredLane = 0;
             }
-           // desiredLane = Mathf.Clamp(desiredLane, 0, 2);
 
             //Calculate where we should be in the future
             Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
@@ -156,24 +155,11 @@ public class PlayerMovement : MonoBehaviour
         if (alreadyHit) return;
             if (hit.gameObject.CompareTag("Obstacle"))
             {
-            Debug.Log("Hit");
-                if (playerCurrentHp > 0)
-                {
-                  //  alreadyHit = true;
-                    hit.gameObject.GetComponent<Collider>().enabled = false;
-                    hit.gameObject.GetComponent<Animator>().SetTrigger("Hit");
-                    Destroy(hit.gameObject,3f);
-                    playerCurrentHp--;
-                    gameManager.HealthUpdate(playerCurrentHp);
-                   // alreadyHit = false;
-                }
-                else
-                {
                     alreadyHit = true;
                     animator.SetTrigger("Hit");
                     isMovable = false;
                     gameManager.GameOver();
-                }
+                
             }
 
        

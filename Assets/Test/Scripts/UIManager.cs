@@ -7,10 +7,14 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
    [SerializeField] List<GameObject> panels = new List<GameObject>();
+    GameManager gameManager;
     
     void Start()
     {
-
+        if (GameObject.FindWithTag("GameManager").gameObject.GetComponent<GameManager>() != null)
+        {
+            gameManager = GameObject.FindWithTag("GameManager").gameObject.GetComponent<GameManager>();
+        }
     }
     void Update()
     {
@@ -33,6 +37,7 @@ public class UIManager : MonoBehaviour
     public void OnPause()
     {
         Time.timeScale = 0f;
+        gameManager.DistanceUpdate();
     }
     public void OnResume()
     {

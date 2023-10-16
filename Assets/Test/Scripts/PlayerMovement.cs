@@ -41,8 +41,9 @@ public class PlayerMovement : MonoBehaviour
     bool isMoving;
 
     [SerializeField] float maxTime = 3f;
-     public float currentTime = 0;
-
+    public float currentTime = 0;
+    [SerializeField] public int distanceCovered;
+    [SerializeField] int totalDistance;
     private void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -54,13 +55,22 @@ public class PlayerMovement : MonoBehaviour
         currentTime = maxTime;
         StartCoroutine(CountTimer());
 
+        if(!PlayerPrefs.HasKey("Distance"))
+        {
+            PlayerPrefs.SetInt("Distance",(int)gameObject.transform.position.z);
+        }
+        totalDistance = PlayerPrefs.GetInt("Distance");
+
     }
 
     private void Update()
     {
+        distanceCovered = (int)gameObject.transform.position.z;
+        if(distanceCovered > totalDistance) 
+        { //map change
+         }
         if (isMovable)
         {
-
             move.z = forwardSpeed;
             if (forwardSpeed < maxSpeed) { forwardSpeed += forwardSpeedMultiplier * Time.deltaTime; }
             animator.SetFloat("Speed", Mathf.Clamp(initialAnimationSpeed += 0.001f * Time.deltaTime , initialAnimationSpeed, 1f));

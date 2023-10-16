@@ -75,9 +75,19 @@ public class GameManager : MonoBehaviour
    {
         healthCountText.text = health.ToString();
    }
+    public void DistanceUpdate()
+    {
+        int lastDistance = PlayerPrefs.GetInt("Distance");
+        if(playerMovement.distanceCovered > lastDistance)
+        {
+            PlayerPrefs.SetInt("Distance",playerMovement.distanceCovered);
+        }
+    }
     public void GameOver()
     {
+      //  DistanceUpdate();
         StartCoroutine(GameOverUi());
+        Debug.Log("Go");
     }
     IEnumerator GameOverUi()
     {

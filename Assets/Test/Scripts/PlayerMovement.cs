@@ -122,6 +122,9 @@ public class PlayerMovement : MonoBehaviour
 
             controller.Move(move * Time.deltaTime);
             animator.SetFloat("Horizontal", diff.x);
+            animator.SetBool("Right", SwipeManager.swipeRight);
+            animator.SetBool("Left", SwipeManager.swipeLeft);
+
         }
     }
 
@@ -138,7 +141,7 @@ public class PlayerMovement : MonoBehaviour
     {
         isSliding = true;
         animator.SetTrigger("Slide");
-        controller.center = new Vector3(0,0.1f, 0);
+        controller.center = new Vector3(0,-0.1f, 0);
         controller.height = 0.5f;
         yield return new WaitForSeconds(slideDuration);
         animator.SetTrigger("Run");

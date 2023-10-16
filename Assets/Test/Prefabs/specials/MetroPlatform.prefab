@@ -91,11 +91,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefab:
-  - {fileID: 1214492837578685549, guid: a21173e5be4d2e249931619c4c253006, type: 3}
-  - {fileID: 9219188071692057757, guid: 964a9b75e0bdfba4699902c131ddb666, type: 3}
+  - {fileID: 1780459250618503040, guid: c798bc74bb9802440a8643daebb68466, type: 3}
+  - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
+  - {fileID: 1545637446773528302, guid: 37ff10f63d111454f865b99603fd3c8f, type: 3}
+  - {fileID: 3679488196697164996, guid: 7dd6591f60be81f409d8c00be0f78f04, type: 3}
+  - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
+  - {fileID: 5711720310490355914, guid: c6604adc29c32b342b90edf64f5ab578, type: 3}
+  - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
   maxObstacleCount: 3
   minObstacleCount: 1
   widthOffset: 1
+  betweenDistance: 5
 --- !u!1 &824233011667954503
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,11 +443,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefab:
-  - {fileID: 1214492837578685549, guid: a21173e5be4d2e249931619c4c253006, type: 3}
-  - {fileID: 9219188071692057757, guid: 964a9b75e0bdfba4699902c131ddb666, type: 3}
+  - {fileID: 1780459250618503040, guid: c798bc74bb9802440a8643daebb68466, type: 3}
+  - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
+  - {fileID: 1545637446773528302, guid: 37ff10f63d111454f865b99603fd3c8f, type: 3}
+  - {fileID: 3679488196697164996, guid: 7dd6591f60be81f409d8c00be0f78f04, type: 3}
+  - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
+  - {fileID: 5711720310490355914, guid: c6604adc29c32b342b90edf64f5ab578, type: 3}
+  - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
   maxObstacleCount: 3
   minObstacleCount: 1
   widthOffset: 1
+  betweenDistance: 5
 --- !u!1 &2066763203785395948
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,8 +512,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.21, y: 3.4898925, z: 21.294693}
-  m_Center: {x: -0.13421059, y: 1.72, z: 9.749527}
+  m_Size: {x: 6.21, y: 3.4898925, z: 6.7483835}
+  m_Center: {x: -0.13421059, y: 1.72, z: 17.992683}
 --- !u!114 &5064659568485212614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -532,11 +544,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefab:
-  - {fileID: 1214492837578685549, guid: a21173e5be4d2e249931619c4c253006, type: 3}
-  - {fileID: 9219188071692057757, guid: 964a9b75e0bdfba4699902c131ddb666, type: 3}
+  - {fileID: 1780459250618503040, guid: c798bc74bb9802440a8643daebb68466, type: 3}
+  - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
+  - {fileID: 1545637446773528302, guid: 37ff10f63d111454f865b99603fd3c8f, type: 3}
+  - {fileID: 3679488196697164996, guid: 7dd6591f60be81f409d8c00be0f78f04, type: 3}
+  - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
+  - {fileID: 5711720310490355914, guid: c6604adc29c32b342b90edf64f5ab578, type: 3}
+  - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
   maxObstacleCount: 3
   minObstacleCount: 1
   widthOffset: 1
+  betweenDistance: 5
 --- !u!1 &2240189920550544980
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,11 +753,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefab:
-  - {fileID: 1214492837578685549, guid: a21173e5be4d2e249931619c4c253006, type: 3}
-  - {fileID: 9219188071692057757, guid: 964a9b75e0bdfba4699902c131ddb666, type: 3}
+  - {fileID: 1780459250618503040, guid: c798bc74bb9802440a8643daebb68466, type: 3}
+  - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
+  - {fileID: 1545637446773528302, guid: 37ff10f63d111454f865b99603fd3c8f, type: 3}
+  - {fileID: 3679488196697164996, guid: 7dd6591f60be81f409d8c00be0f78f04, type: 3}
+  - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
+  - {fileID: 5711720310490355914, guid: c6604adc29c32b342b90edf64f5ab578, type: 3}
+  - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
   maxObstacleCount: 3
   minObstacleCount: 1
   widthOffset: 1
+  betweenDistance: 5
 --- !u!1 &3722467547136677248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1440,11 +1464,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefab:
-  - {fileID: 1214492837578685549, guid: a21173e5be4d2e249931619c4c253006, type: 3}
-  - {fileID: 9219188071692057757, guid: 964a9b75e0bdfba4699902c131ddb666, type: 3}
+  - {fileID: 1780459250618503040, guid: c798bc74bb9802440a8643daebb68466, type: 3}
+  - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
+  - {fileID: 1545637446773528302, guid: 37ff10f63d111454f865b99603fd3c8f, type: 3}
+  - {fileID: 3679488196697164996, guid: 7dd6591f60be81f409d8c00be0f78f04, type: 3}
+  - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
+  - {fileID: 5711720310490355914, guid: c6604adc29c32b342b90edf64f5ab578, type: 3}
+  - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
   maxObstacleCount: 3
   minObstacleCount: 1
   widthOffset: 1
+  betweenDistance: 5
 --- !u!1 &6656844142394387088
 GameObject:
   m_ObjectHideFlags: 0
@@ -1503,8 +1533,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.21, y: 3.4898925, z: 21.294693}
-  m_Center: {x: -0.13421059, y: 1.72, z: 9.749527}
+  m_Size: {x: 6.21, y: 3.4898925, z: 14.064468}
+  m_Center: {x: -0.13421059, y: 1.72, z: 6.1344147}
 --- !u!114 &4943443035509609667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1535,11 +1565,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefab:
-  - {fileID: 1214492837578685549, guid: a21173e5be4d2e249931619c4c253006, type: 3}
-  - {fileID: 9219188071692057757, guid: 964a9b75e0bdfba4699902c131ddb666, type: 3}
+  - {fileID: 1780459250618503040, guid: c798bc74bb9802440a8643daebb68466, type: 3}
+  - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
+  - {fileID: 1545637446773528302, guid: 37ff10f63d111454f865b99603fd3c8f, type: 3}
+  - {fileID: 3679488196697164996, guid: 7dd6591f60be81f409d8c00be0f78f04, type: 3}
+  - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
+  - {fileID: 5711720310490355914, guid: c6604adc29c32b342b90edf64f5ab578, type: 3}
+  - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
   maxObstacleCount: 3
   minObstacleCount: 1
   widthOffset: 1
+  betweenDistance: 5
 --- !u!1 &6843707895746616548
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,11 +2047,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefab:
-  - {fileID: 1214492837578685549, guid: a21173e5be4d2e249931619c4c253006, type: 3}
-  - {fileID: 9219188071692057757, guid: 964a9b75e0bdfba4699902c131ddb666, type: 3}
+  - {fileID: 1780459250618503040, guid: c798bc74bb9802440a8643daebb68466, type: 3}
+  - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
+  - {fileID: 1545637446773528302, guid: 37ff10f63d111454f865b99603fd3c8f, type: 3}
+  - {fileID: 3679488196697164996, guid: 7dd6591f60be81f409d8c00be0f78f04, type: 3}
+  - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
+  - {fileID: 5711720310490355914, guid: c6604adc29c32b342b90edf64f5ab578, type: 3}
+  - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
   maxObstacleCount: 3
   minObstacleCount: 1
   widthOffset: 1
+  betweenDistance: 5
 --- !u!1 &8250483415635486905
 GameObject:
   m_ObjectHideFlags: 0

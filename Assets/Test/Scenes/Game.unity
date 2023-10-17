@@ -815,8 +815,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278584863
-  m_fontColor: {r: 0.122641504, g: 0.0248754, b: 0.0248754, a: 1}
+    rgba: 4289243304
+  m_fontColor: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -13579,7 +13579,7 @@ PrefabInstance:
       objectReference: {fileID: 5711720310490355914, guid: c6604adc29c32b342b90edf64f5ab578, type: 3}
     - target: {fileID: 489557511414210522, guid: 1c9b88b3da5ed2d499d86785299f1f60, type: 3}
       propertyPath: m_Name
-      value: PlatForm
+      value: PlatForm1
       objectReference: {fileID: 0}
     - target: {fileID: 489557511414210522, guid: 1c9b88b3da5ed2d499d86785299f1f60, type: 3}
       propertyPath: m_IsActive
@@ -13665,6 +13665,10 @@ PrefabInstance:
       propertyPath: obstaclePrefab.Array.data[9]
       value: 
       objectReference: {fileID: 5711720310490355914, guid: c6604adc29c32b342b90edf64f5ab578, type: 3}
+    - target: {fileID: 6133510360659847995, guid: 1c9b88b3da5ed2d499d86785299f1f60, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7270749838895444746, guid: 1c9b88b3da5ed2d499d86785299f1f60, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

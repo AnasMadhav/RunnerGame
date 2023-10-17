@@ -85,9 +85,8 @@ public class GameManager : MonoBehaviour
     }
     public void GameOver()
     {
-      //  DistanceUpdate();
+        DistanceUpdate();
         StartCoroutine(GameOverUi());
-        Debug.Log("Go");
     }
     IEnumerator GameOverUi()
     {

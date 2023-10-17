@@ -67,8 +67,10 @@ public class PlayerMovement : MonoBehaviour
     {
         distanceCovered = (int)gameObject.transform.position.z;
         if(distanceCovered > totalDistance) 
-        { //map change
-         }
+        {
+            //map change
+
+        }
         if (isMovable)
         {
             move.z = forwardSpeed;
@@ -132,8 +134,8 @@ public class PlayerMovement : MonoBehaviour
 
             controller.Move(move * Time.deltaTime);
             animator.SetFloat("Horizontal", diff.x);
-            animator.SetBool("Right", SwipeManager.swipeRight);
-            animator.SetBool("Left", SwipeManager.swipeLeft);
+          //  animator.SetBool("Right", SwipeManager.swipeRight);
+          //  animator.SetBool("Left", SwipeManager.swipeLeft);
 
         }
     }

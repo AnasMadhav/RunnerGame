@@ -29,9 +29,10 @@ public class RoadSpawner : MonoBehaviour
         {
             roads = roads.OrderBy(r => r.transform.position.z).ToList();
         }
-        ObstacleRemoveAtInitial(roads[1]);
+        ObstacleRemove(roads[0]);
+        ObstacleRemove(roads[1]);
+        SpawnTriggerState(roads[0], false);
     }
-
     public void LoadCollectibleMap(GameObject platform,List<GameObject>map)
     {
         roads.Clear();
@@ -42,7 +43,7 @@ public class RoadSpawner : MonoBehaviour
             roads.Add(spawnRoad.transform.GetChild(i).gameObject);
             roads[i].transform.position = Vector3.forward * (lastSpawnTriggeredPos + (tileOffset * i));
         }
-        ObstacleRemoveAtInitial(roads[1]);
+        ObstacleRemove(roads[1]);
     }
     public void LoadOriginalMap()
     {
@@ -59,18 +60,19 @@ public class RoadSpawner : MonoBehaviour
         {
             roads = roads.OrderBy(r => r.transform.position.z).ToList();
         }
-        ObstacleRemoveAtInitial(roads[1]);
+        ObstacleRemove(roads[1]);
     }
     
-   
-    public void ObstacleRemoveAtInitial(GameObject road)
+    public void SpawnTriggerState(GameObject road,bool status)
+    {
+       road.transform.Find("SpawnTrigger").gameObject.SetActive(status);
+    }
+    public void ObstacleRemove(GameObject road)
     {
         road.GetComponent<ObstacleSpawner>().ResetObstacles();
     }
     public void MoveRoad()
     {
-        if (!isTransition)
-        {
             GameObject movedRoad = roads[0];
             roads.Remove(movedRoad);
             float newZ = roads[roads.Count - 1].transform.position.z + tileOffset;
@@ -80,7 +82,9 @@ public class RoadSpawner : MonoBehaviour
             specialsSpawner.SpawnCollectibles(movedRoad);
             movedRoad.transform.position = new Vector3(0, 0, newZ);
             roads.Add(movedRoad);
-        }
-       
+            if(!movedRoad.transform.Find("SpawnTrigger").gameObject.activeSelf)
+            {
+                SpawnTriggerState(movedRoad, true);
+            }
     }
 }

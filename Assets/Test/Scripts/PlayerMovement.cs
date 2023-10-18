@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector] public bool isMovable;
   
     [SerializeField] public Animator animator;
-    GameManager gameManager;
+    [SerializeField] GameManager gameManager;
     bool isMoving;
 
     [SerializeField] float maxTime = 3f;
@@ -53,14 +53,13 @@ public class PlayerMovement : MonoBehaviour
         gameManager.HealthUpdate(playerCurrentHp);
         isMovable = false;
         currentTime = maxTime;
-        StartCoroutine(CountTimer());
 
         if(!PlayerPrefs.HasKey("Distance"))
         {
             PlayerPrefs.SetInt("Distance",(int)gameObject.transform.position.z);
         }
         totalDistance = PlayerPrefs.GetInt("Distance");
-
+        StartCoroutine(CountTimer());
     }
 
     private void Update()
@@ -183,7 +182,7 @@ public class PlayerMovement : MonoBehaviour
     {
         while(currentTime>0)
         {
-            gameManager.TimerUpdate();
+          //  gameManager.TimerUpdate();
             currentTime -= 1;
             yield return new WaitForSeconds(1f);
         }

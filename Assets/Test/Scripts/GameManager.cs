@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public static int coinCount, totalCoinCount,collectibleCount;
     void Start()
     {
+        player = GameObject.FindWithTag("Player").gameObject;
         playerMovement = player.GetComponent<PlayerMovement>();
         coinCount = 0;
         UIManager.EnablePanel("HudPanel");
@@ -43,7 +44,8 @@ public class GameManager : MonoBehaviour
    
     void Update()
     {
-        
+        Debug.Log(playerMovement.currentTime);
+        TimerUpdate();
     }
     public void CoinUpdate()
     {
@@ -63,7 +65,7 @@ public class GameManager : MonoBehaviour
 
     public void TimerUpdate()
     {
-        timerCountText.text = playerMovement.currentTime.ToString("0");
+        timerCountText.text = playerMovement.currentTime.ToString();
     }
     public void DisableTimer()
     {

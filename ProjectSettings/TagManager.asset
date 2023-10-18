@@ -10,11 +10,13 @@ TagManager:
   - Obstacle
   - Coin
   - SpawnManager
+  - Item
+  - Door
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PostProcessing
   - Water
   - UI
   - Player

@@ -14,6 +14,7 @@ public class CollectibleData : MonoBehaviour
     private void Start()
     {
         gameManager = GameObject.FindWithTag("GameManager").gameObject.GetComponent<GameManager>();
+        
     }
     
     public void LoadData()

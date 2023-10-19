@@ -110,6 +110,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AlphaCutoff: 0.5
     - _BlendNormals: 1
     - _BumpScale: 1
     - _CoverageContrast: 0.3

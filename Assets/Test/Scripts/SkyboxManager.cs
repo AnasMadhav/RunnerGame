@@ -6,7 +6,8 @@ public class SkyboxManager : MonoBehaviour
     public Material noonSkybox;
     public Material eveningSkybox;
     public Material nightSkybox;
-
+    [Range(0,4)]
+    public float currentTime;
     // Adjust the range of this variable for smooth blending.
     [Range(0, 1)]
     public float blendFactor;
@@ -14,7 +15,7 @@ public class SkyboxManager : MonoBehaviour
 
     void Update()
     {
-        float currentTime = 0;// Get the current time from your day-night cycle system.
+       
 
         Material targetSkybox;
 
@@ -37,5 +38,6 @@ public class SkyboxManager : MonoBehaviour
 
         // Lerp between the current skybox and the target skybox based on the blend factor.
         RenderSettings.skybox.Lerp(RenderSettings.skybox, targetSkybox, blendFactor);
+        //RenderSettings.skybox = targetSkybox;
     }
 }

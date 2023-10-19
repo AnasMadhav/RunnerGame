@@ -125,7 +125,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 diff = targetPosition - transform.position;
                 moveDir = diff.normalized * horizontalSpeed * Time.deltaTime;
-                if (moveDir.sqrMagnitude < diff.magnitude)
+                if (moveDir.sqrMagnitude < diff.sqrMagnitude)
                     controller.Move(moveDir);
                 else
                     controller.Move(diff);

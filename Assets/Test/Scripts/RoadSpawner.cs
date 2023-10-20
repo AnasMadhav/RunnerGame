@@ -20,10 +20,10 @@ public class RoadSpawner : MonoBehaviour
         isTransition = false;
         specialsSpawner = gameObject.GetComponent<SpecialsSpawner>();
         //  roads = roadTile;
-        for (int i = 0; i < roadTile.Count; i++)
+        for (int i = 0; i < platforms.transform.childCount; i++)
         {
             roads.Add(platforms.transform.GetChild(i).gameObject);
-            roads[i].transform.position = Vector3.forward * ((i-1) * tileOffset);
+          //  roads[i].transform.position = Vector3.forward * ((i-1) * tileOffset);
         }
         if (roads != null && roads.Count > 0)
         {
@@ -69,15 +69,25 @@ public class RoadSpawner : MonoBehaviour
     }
     public void ObstacleRemove(GameObject road)
     {
-        road.GetComponent<ObstacleSpawner>().ResetObstacles();
+        if (road.GetComponent<ObstacleSpawner>() != null)
+        {
+            road.GetComponent<ObstacleSpawner>().ResetObstacles();
+            
+        }
     }
     public void MoveRoad()
     {
             GameObject movedRoad = roads[0];
             roads.Remove(movedRoad);
             float newZ = roads[roads.Count - 1].transform.position.z + tileOffset;
-            movedRoad.gameObject.GetComponent<ObstacleSpawner>().SpawnObstacle();
-            movedRoad.gameObject.GetComponent<CoinSpawner>().SpawnCoins();
+            if(movedRoad.gameObject.GetComponent<ObstacleSpawner>()!=null) 
+            {
+              movedRoad.gameObject.GetComponent<ObstacleSpawner>().SpawnObstacle();
+            }
+            if(movedRoad.gameObject.GetComponent<CoinSpawner>() != null)
+            {
+             movedRoad.gameObject.GetComponent<CoinSpawner>().SpawnCoins();
+            }
             specialsSpawner.SetRoad(movedRoad);
             specialsSpawner.SpawnCollectibles(movedRoad);
             movedRoad.transform.position = new Vector3(0, 0, newZ);

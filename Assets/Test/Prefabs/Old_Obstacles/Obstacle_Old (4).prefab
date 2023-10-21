@@ -199,6 +199,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2586709018874423762}
     m_Modifications:
+    - target: {fileID: 466560571991514018, guid: f949c47a545d4c34fa98af353db0faaf, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.005628553
+      objectReference: {fileID: 0}
     - target: {fileID: 2455592724140067529, guid: f949c47a545d4c34fa98af353db0faaf, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.85858

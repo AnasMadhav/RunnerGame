@@ -9,7 +9,7 @@ public class RoadSpawner : MonoBehaviour
     [SerializeField] GameObject[] keralaMaps;
     [SerializeField] int oldKeralaDistance, midKeralaDistance, newKeralaDistance;
     [SerializeField] GameObject platforms;
-    [SerializeField] List<GameObject> roads;
+    public List<GameObject> roads;
     [SerializeField] List<GameObject> roadTile;
     [SerializeField] float tileOffset = 30f;
     [SerializeField] public float lastSpawnTriggeredPos;

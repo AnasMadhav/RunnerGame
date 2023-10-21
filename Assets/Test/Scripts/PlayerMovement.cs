@@ -64,6 +64,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+      //  velocity.y += gravity * Time.deltaTime;
+        animator.SetBool("Move", isMovable);
         distanceCovered = (int)gameObject.transform.position.z;
         if(distanceCovered > totalDistance) 
         {
@@ -112,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
                 if (desiredLane == -1)
                     desiredLane = 0;
             }
-
+            
             //Calculate where we should be in the future
             Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
             if (desiredLane == 0)

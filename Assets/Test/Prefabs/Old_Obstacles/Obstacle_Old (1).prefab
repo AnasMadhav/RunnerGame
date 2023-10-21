@@ -47,6 +47,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_5
       objectReference: {fileID: 0}
+    - target: {fileID: 5223206275612908106, guid: 41b5a254b5df7494d8a8b4350ae0b3e0, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.1618444
+      objectReference: {fileID: 0}
     - target: {fileID: 5761853325304565744, guid: 41b5a254b5df7494d8a8b4350ae0b3e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

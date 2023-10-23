@@ -3,7 +3,77 @@ guid: 3ded4301ec8282945a3f966b0fce55b1
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blackWall
+    second: {fileID: 2100000, guid: 9365eeedbdae98940bae2d8ea3ecd534, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: brickWall
+    second: {fileID: 2100000, guid: 53dd8cdead20b5041a1505b8d8ec633c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cement
+    second: {fileID: 2100000, guid: 8e87b0c1450239446a9935c678ec2b7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fake_mat_255_255_255_33
+    second: {fileID: 2100000, guid: 32a823f1711f7924bae5705ed70d0f28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fake_mat_9_8_8_256
+    second: {fileID: 2100000, guid: 09d3e8b4a3b0b094894f13f7516e2795, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: groundTile
+    second: {fileID: 2100000, guid: 0fe236090c3183949bf609dce1a174ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal
+    second: {fileID: 2100000, guid: a99f8d4b8d354914aa66d9220b93bdd2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mur_vegetal_off___phong155
+    second: {fileID: 2100000, guid: db820ff59b23a9340afc94a4cfc8287c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: outdoor_dining_set___outdoor_dining_set_bois1
+    second: {fileID: 2100000, guid: 3ab101fee73b32a46ab0e5d0faa818af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plante_interieur_off___bis_palmier_tronc3
+    second: {fileID: 2100000, guid: 768198274a6f21243a9343ddada60100, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plante_interieur_off___phong81
+    second: {fileID: 2100000, guid: e3dcc40bc3bdd09479abd4827d2ebbfe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plants
+    second: {fileID: 2100000, guid: bfb217f4bf739a748ba8cffd3e71b3bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: porte_042_new____mat_bois075sg1
+    second: {fileID: 2100000, guid: d4756b5f89a22434eb8d22c8bd5fd5fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: window
+    second: {fileID: 2100000, guid: 0a8c005c28d4b2d40a03e7dc9748b0de, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

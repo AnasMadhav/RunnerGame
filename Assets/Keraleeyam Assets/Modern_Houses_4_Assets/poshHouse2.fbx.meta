@@ -3,7 +3,52 @@ guid: c4ea06bb62dda0841923c0b409035cb0
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Multicoated glass
+    second: {fileID: 2100000, guid: b760f5f67a018f444982828965ba9b32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cement
+    second: {fileID: 2100000, guid: 574039fab376bd043ac8a2ecde386d0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cement2
+    second: {fileID: 2100000, guid: 2c9b3e848b8d24943a45674de35b6a8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal
+    second: {fileID: 2100000, guid: 50402e6e9ddef6f4799b99b1d4a0435a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metalDark
+    second: {fileID: 2100000, guid: 15c58311640ca4d40b4c56ece9b0465f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pattern
+    second: {fileID: 2100000, guid: 08e4e21787d964843b0c405066ce7313, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: window
+    second: {fileID: 2100000, guid: 8da8a5fb5707ac1459dc19a7602f1f30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: window Brushed  Dark Metal
+    second: {fileID: 2100000, guid: 428ce769e8b1d394c8778ef7a0fcd7e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood
+    second: {fileID: 2100000, guid: b2bd57593b8dda1479dbfff2f11fc9a0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

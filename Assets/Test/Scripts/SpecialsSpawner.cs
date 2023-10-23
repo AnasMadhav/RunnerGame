@@ -40,13 +40,16 @@ public class SpecialsSpawner : MonoBehaviour
       float spawnChance = Random.Range(0, spawnRange);
       if(spawnChance < spawnPercent && specialCollectibles != null)
       {
-            GameObject specials =  Instantiate(specialCollectibles[Random.Range(0, specialCollectibles.Count)],GetCollectiblePosition(_collider),
-               Quaternion.identity,road.transform);
-            if(PlayerPrefs.GetInt(specials.name)==1)
+            if (specialCollectibles.Count > 0)
             {
-                Destroy(specials);
-                PlayerPrefs.SetInt("Collectible", PlayerPrefs.GetInt("Collectible")+1);
-                Debug.Log("Multiple Found");
+                GameObject specials = Instantiate(specialCollectibles[Random.Range(0, specialCollectibles.Count)], GetCollectiblePosition(_collider),
+                   Quaternion.identity, road.transform);
+                if (PlayerPrefs.GetInt(specials.name) == 1)
+                {
+                    Destroy(specials);
+                    PlayerPrefs.SetInt("Collectible", PlayerPrefs.GetInt("Collectible") + 1);
+                    Debug.Log("Multiple Found");
+                }
             }
       }
     }

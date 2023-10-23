@@ -69,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
         distanceCovered = (int)gameObject.transform.position.z;
         if(distanceCovered > totalDistance) 
         {
-            //map change
+            
 
         }
         if (isMovable)

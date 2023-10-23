@@ -35,9 +35,9 @@ public class SkyboxManager : MonoBehaviour
         {
             targetSkybox = nightSkybox;
         }
+        Debug.Log("Target Skybox: " + targetSkybox.name);
 
-        // Lerp between the current skybox and the target skybox based on the blend factor.
-        RenderSettings.skybox.Lerp(RenderSettings.skybox, targetSkybox, blendFactor);
-        //RenderSettings.skybox = targetSkybox;
+        RenderSettings.skybox.Lerp(RenderSettings.skybox, targetSkybox, 0.5f * Time.deltaTime);
+       // Debug.Log("Blend Factor: " + blendFactor);
     }
 }

@@ -27,8 +27,15 @@ public class JSONFetcher : MonoBehaviour
     private void Start()
     {
         LoadData();
-        
-        
+        if(PlayerPrefs.HasKey("currentQuestionIndex"))
+        {
+
+        }
+        else
+        {
+            PlayerPrefs.SetInt("currentQuestionIndex", 0);
+        }
+      
     }
     public void LoadData()
     {
@@ -123,8 +130,9 @@ public class JSONFetcher : MonoBehaviour
     IEnumerator Delay()
     {
         yield return new WaitForSeconds(5f);
+        PlayerPrefs.SetInt("currentQuestionIndex", currentQuestionIndex);
         currentQuestionIndex++;
-        ShowNextQuestion();
+        //ShowNextQuestion();
         choiceD.GetComponent<Image>().color = Color.white;
         choiceA.GetComponent<Image>().color = Color.white;
         choiceB.GetComponent<Image>().color = Color.white;

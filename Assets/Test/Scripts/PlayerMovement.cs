@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(!PlayerPrefs.HasKey("Distance"))
         {
-            PlayerPrefs.SetInt("Distance",(int)gameObject.transform.position.z);
+            PlayerPrefs.SetInt("Distance",0);
         }
         totalDistance = PlayerPrefs.GetInt("Distance");
         StartCoroutine(CountTimer());
@@ -67,11 +67,6 @@ public class PlayerMovement : MonoBehaviour
       //  velocity.y += gravity * Time.deltaTime;
         animator.SetBool("Move", isMovable);
         distanceCovered = (int)gameObject.transform.position.z;
-        if(distanceCovered > totalDistance) 
-        {
-            
-
-        }
         if (isMovable)
         {
             move.z = forwardSpeed;
@@ -171,11 +166,14 @@ public class PlayerMovement : MonoBehaviour
         if (alreadyHit) return;
             if (hit.gameObject.CompareTag("Obstacle"))
             {
-                    alreadyHit = true;
+                if (distanceCovered > totalDistance)
+                 {
+                     PlayerPrefs.SetInt("Distance", distanceCovered);
+                 }
+            alreadyHit = true;
                     animator.SetTrigger("Hit");
                     isMovable = false;
                     gameManager.GameOver();
-                
             }
 
        

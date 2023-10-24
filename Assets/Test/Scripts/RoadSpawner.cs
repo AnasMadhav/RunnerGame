@@ -5,20 +5,22 @@ using UnityEngine;
 
 public class RoadSpawner : MonoBehaviour
 {
+    [SerializeField] PlayerMovement player;
     [SerializeField] bool isTransition;
     [SerializeField] int distance;
     [SerializeField] GameObject[] keralaMaps;
     [SerializeField] int oldKeralaDistance, midKeralaDistance, newKeralaDistance;
-    [SerializeField] GameObject platforms, newPlatform;
+    [SerializeField] GameObject platforms, midPlatform,newPlatform;
     public List<GameObject> roads,coveredRoad;
     [SerializeField] List<GameObject> roadTile;
     [SerializeField] float tileOffset = 30f;
     [SerializeField] public float lastSpawnTriggeredPos;
     GameObject spawnRoad;
     SpecialsSpawner specialsSpawner;
-    bool isMidKerala;
+    bool isMidKerala,isNewKerala;
     void Start()
     {
+       // distance = PlayerPrefs.GetInt("Distance");
         coveredRoad = new List<GameObject>();
         ChangeInitialMap(distance);
         isTransition = true;
@@ -41,13 +43,15 @@ public class RoadSpawner : MonoBehaviour
     }
     private void Update()
     {
+        Debug.Log(distance);
+        distance = player.distanceCovered;
         if(distance > oldKeralaDistance && !isMidKerala)
         {
-            ChangeMapOnGamePlay(keralaMaps[1]);
+            ChangeMapOnGamePlayMid(keralaMaps[1]);
         }
-        if(distance > midKeralaDistance) 
+        if(distance > midKeralaDistance && !isNewKerala) 
         {
-           // ChangeMapOnGamePlay(keralaMaps[2]);
+            ChangeMapOnGamePlayNew(keralaMaps[2]);
         }
     }
     public void ChangeInitialMap(int distance)
@@ -59,23 +63,26 @@ public class RoadSpawner : MonoBehaviour
         else if(distance > oldKeralaDistance && distance <= midKeralaDistance)
         {
             platforms = keralaMaps[1];
+            isMidKerala = true;
         }
         else if (distance > midKeralaDistance)
         {
             platforms = keralaMaps[2];
+            isMidKerala = true;
+            isNewKerala = true;
         }
     }
 
-    public void ChangeMapOnGamePlay(GameObject map)
+    public void ChangeMapOnGamePlayMid(GameObject map)
     {
         float spawnPos = roads[roads.Count - 1].transform.position.z;
-        newPlatform = map;
+        midPlatform = map;
         isTransition = false;
         roads.Clear();
-        newPlatform.SetActive(true);
-        for (int i = 0; i < newPlatform.transform.childCount; i++)
+        midPlatform.SetActive(true);
+        for (int i = 0; i < midPlatform.transform.childCount; i++)
         {
-            roads.Add(newPlatform.transform.GetChild(i).gameObject);
+            roads.Add(midPlatform.transform.GetChild(i).gameObject);
             Vector3 pos = new Vector3(0,0,spawnPos + (tileOffset * (i+1)));
             roads[i].transform.position = pos;
         }
@@ -92,6 +99,35 @@ public class RoadSpawner : MonoBehaviour
         ObstacleRemove(roads[1]);
         SpawnTriggerState(roads[0], false);
         isMidKerala = true;
+        coveredRoad.Clear();
+        coveredRoad = roads;
+    }
+    public void ChangeMapOnGamePlayNew(GameObject map)
+    {
+        foreach (GameObject road in coveredRoad)
+        {
+            road.transform.Find("SpawnTrigger").gameObject.SetActive(false);
+        }
+        float spawnPos = roads[roads.Count - 1].transform.position.z;
+        newPlatform = map;
+        isTransition = false;
+        roads.Clear();
+        newPlatform.SetActive(true);
+        for (int i = 0; i < newPlatform.transform.childCount; i++)
+        {
+            roads.Add(newPlatform.transform.GetChild(i).gameObject);
+            Vector3 pos = new Vector3(0, 0, spawnPos + (tileOffset * (i + 1)));
+            roads[i].transform.position = pos;
+        }
+        if (roads != null && roads.Count > 0)
+        {
+            roads = roads.OrderBy(r => r.transform.position.z).ToList();
+        }
+        isTransition = true;
+        ObstacleRemove(roads[0]);
+        ObstacleRemove(roads[1]);
+        SpawnTriggerState(roads[0], false);
+        isNewKerala = true;
 
     }
     public void LoadCollectibleMap(GameObject platform,List<GameObject>map)

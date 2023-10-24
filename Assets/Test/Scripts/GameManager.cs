@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
    
     void Update()
     {
-        Debug.Log(playerMovement.currentTime);
+      //  Debug.Log(playerMovement.currentTime);
         TimerUpdate();
     }
     public void CoinUpdate()

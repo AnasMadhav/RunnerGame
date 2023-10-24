@@ -420,7 +420,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3043457768520347251
 RectTransform:
   m_ObjectHideFlags: 0
@@ -514,6 +514,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5006744612999778855, guid: d302b5f5407e92b43b276b5759006d02, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006744612999778855, guid: d302b5f5407e92b43b276b5759006d02, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: -2310514774154243031, guid: 1664d2693e26e16448dbf3a0c4e82690, type: 3}
     - target: {fileID: 6138594783035926856, guid: d302b5f5407e92b43b276b5759006d02, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.1
@@ -560,7 +568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6808171338819990514, guid: d302b5f5407e92b43b276b5759006d02, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

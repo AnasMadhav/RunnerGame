@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 0.91
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 1, g: 1, b: 1, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 77715b8b6b248994891d3ccad1ad330b, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: e447c5dfa44581b4697c9b8f19e5155d, type: 2}
   m_HaloStrength: 0.85
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.662
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.10892631, g: 0.22739275, b: 0.3150962, a: 0.662}
+  m_IndirectSpecularColor: {r: 0.25567663, g: 0.5556346, b: 0.6241688, a: 0.662}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -24838,11 +24838,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5e95b597058a3048bf28143c22c55b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  morningSkybox: {fileID: 2100000, guid: 3930fc89a28b29746bde6a2389a513e0, type: 2}
-  noonSkybox: {fileID: 2100000, guid: 617d9be015db68348a623b01ea51a8c5, type: 2}
-  eveningSkybox: {fileID: 2100000, guid: 169a1b8f06c17c84e8de491f2bfef986, type: 2}
-  nightSkybox: {fileID: 2100000, guid: ceb0a3ed2cb53a94fa21843cc958c52b, type: 2}
-  currentTime: 1.35
+  morningSkybox: {fileID: 2100000, guid: e447c5dfa44581b4697c9b8f19e5155d, type: 2}
+  noonSkybox: {fileID: 2100000, guid: 7e8e13d7a22d0814a8e55b466f658f31, type: 2}
+  eveningSkybox: {fileID: 2100000, guid: e86ab8de92b74e544b840e05a19333ed, type: 2}
+  nightSkybox: {fileID: 2100000, guid: 5a06e4ba77bb8af4c84da7f16e4eeb88, type: 2}
+  currentTime: 3.8
   blendFactor: 0.5
   morningTime: 0
   noonTime: 1

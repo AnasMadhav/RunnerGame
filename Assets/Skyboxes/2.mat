@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Middaytoeve 1
+  m_Name: 2
   m_Shader: {fileID: 4800000, guid: d8fb8def8c8dfa5498f63d7ac83acaef, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -77,11 +77,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SkyboxTex1:
-        m_Texture: {fileID: 8900000, guid: 21d303ee813de9e4b97bf1c2df083df5, type: 3}
+        m_Texture: {fileID: 8900000, guid: 4a571c5010cb21e4599cce82dbf8fbb7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SkyboxTex2:
-        m_Texture: {fileID: 8900000, guid: 4a571c5010cb21e4599cce82dbf8fbb7, type: 3}
+        m_Texture: {fileID: 8900000, guid: 00367333939c5e343bd4a5d773a69e2b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -105,7 +105,7 @@ Material:
     - _AlphaClip: 0
     - _AlphaToMask: 0
     - _Blend: 0
-    - _BlendFactor: 0.5
+    - _BlendFactor: 0
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
     - _ClearCoatMask: 0

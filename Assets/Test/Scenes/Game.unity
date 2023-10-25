@@ -825,6 +825,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1463,6 +1467,9 @@ MonoBehaviour:
   - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
   - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
   - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -1990,6 +1997,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2230,7 +2241,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 1f0ebeab5bbf6524bbd341046bb61007, type: 2}
     - target: {fileID: 4742473837712756890, guid: f6cb7885e105e04468cfda00d1110341, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.5
+      value: 0.999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: f6cb7885e105e04468cfda00d1110341, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.0008107739
       objectReference: {fileID: 0}
     - target: {fileID: 6741240526099425704, guid: f6cb7885e105e04468cfda00d1110341, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2379,6 +2394,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3299,7 +3318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: 83ce22c74a69cb84d840260dfe9927f2, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.5102883
+      value: 0.999
       objectReference: {fileID: 0}
     - target: {fileID: 7800046652376394697, guid: 83ce22c74a69cb84d840260dfe9927f2, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3531,6 +3550,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3753,6 +3776,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4277,6 +4304,9 @@ MonoBehaviour:
   - {fileID: 1317905730782129518, guid: 3d6450a285b651a428e95d3a9de1a0ad, type: 3}
   - {fileID: 4500467943839585359, guid: c9a399ecc57139b4398a662b1e48f283, type: 3}
   - {fileID: 6055365854558686605, guid: 839cc8100361c614d9d35b58b00cab8b, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -4491,6 +4521,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5379,6 +5413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -5690,6 +5728,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6756,6 +6798,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -7732,6 +7778,9 @@ MonoBehaviour:
   - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
   - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
   - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -8401,6 +8450,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -8565,6 +8618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -8645,7 +8702,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: f3868caac2e60df4093439cee24a184a, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.5
+      value: 0.999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: f3868caac2e60df4093439cee24a184a, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.00052155333
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9389,6 +9450,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -9461,7 +9526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: 83ce22c74a69cb84d840260dfe9927f2, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.5102883
+      value: 0.999
       objectReference: {fileID: 0}
     - target: {fileID: 7800046652376394697, guid: 83ce22c74a69cb84d840260dfe9927f2, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9951,7 +10016,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 9cd604b53cf2c2d46a051f166b4f87ec, type: 2}
     - target: {fileID: 4742473837712756890, guid: fd6799cc1f364d747b32ba83f457f9ca, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.5027231
+      value: 0.999
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10154,6 +10219,9 @@ MonoBehaviour:
   - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
   - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
   - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -10340,6 +10408,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -10409,6 +10481,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -10637,6 +10713,9 @@ MonoBehaviour:
   - {fileID: 1317905730782129518, guid: 3d6450a285b651a428e95d3a9de1a0ad, type: 3}
   - {fileID: 4500467943839585359, guid: c9a399ecc57139b4398a662b1e48f283, type: 3}
   - {fileID: 6055365854558686605, guid: 839cc8100361c614d9d35b58b00cab8b, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -10827,6 +10906,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -10991,6 +11074,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -11061,6 +11148,9 @@ MonoBehaviour:
   - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
   - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
   - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -11221,6 +11311,9 @@ MonoBehaviour:
   - {fileID: 1317905730782129518, guid: 3d6450a285b651a428e95d3a9de1a0ad, type: 3}
   - {fileID: 4500467943839585359, guid: c9a399ecc57139b4398a662b1e48f283, type: 3}
   - {fileID: 6055365854558686605, guid: 839cc8100361c614d9d35b58b00cab8b, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -11391,6 +11484,9 @@ MonoBehaviour:
   - {fileID: 1317905730782129518, guid: 3d6450a285b651a428e95d3a9de1a0ad, type: 3}
   - {fileID: 4500467943839585359, guid: c9a399ecc57139b4398a662b1e48f283, type: 3}
   - {fileID: 6055365854558686605, guid: 839cc8100361c614d9d35b58b00cab8b, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -12169,6 +12265,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -12238,6 +12338,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -12379,6 +12483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -12511,6 +12619,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -12619,6 +12731,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -12814,6 +12930,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -12883,6 +13003,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -13015,6 +13139,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -13163,6 +13291,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -13486,6 +13618,9 @@ MonoBehaviour:
   - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
   - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
   - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -13576,6 +13711,9 @@ MonoBehaviour:
   - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
   - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
   - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -14024,7 +14162,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 9cd604b53cf2c2d46a051f166b4f87ec, type: 2}
     - target: {fileID: 4742473837712756890, guid: fd6799cc1f364d747b32ba83f457f9ca, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.5027231
+      value: 0.999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: fd6799cc1f364d747b32ba83f457f9ca, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.0033037323
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15186,7 +15328,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 7f2ecd947e216e246a4d00bd447c6def, type: 2}
     - target: {fileID: 4742473837712756890, guid: bfc3434abd2839c49bcc45111edcfc05, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.5
+      value: 0.999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: bfc3434abd2839c49bcc45111edcfc05, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.0033037323
       objectReference: {fileID: 0}
     - target: {fileID: 5228686469891196292, guid: bfc3434abd2839c49bcc45111edcfc05, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -15371,7 +15517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: f3868caac2e60df4093439cee24a184a, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.5
+      value: 0.999
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15516,6 +15662,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -16270,6 +16420,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -17036,6 +17190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -17105,6 +17263,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -17237,6 +17399,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -17400,6 +17566,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -17757,7 +17927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: 83ce22c74a69cb84d840260dfe9927f2, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.5102883
+      value: 0.999
       objectReference: {fileID: 0}
     - target: {fileID: 7800046652376394697, guid: 83ce22c74a69cb84d840260dfe9927f2, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -18275,6 +18445,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -18602,6 +18776,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -19028,6 +19206,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -19191,6 +19373,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -19267,7 +19453,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 1f0ebeab5bbf6524bbd341046bb61007, type: 2}
     - target: {fileID: 4742473837712756890, guid: f6cb7885e105e04468cfda00d1110341, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.5
+      value: 0.999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: f6cb7885e105e04468cfda00d1110341, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.0016438557
       objectReference: {fileID: 0}
     - target: {fileID: 6741240526099425704, guid: f6cb7885e105e04468cfda00d1110341, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -19462,6 +19652,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -19895,6 +20089,9 @@ MonoBehaviour:
   - {fileID: 1317905730782129518, guid: 3d6450a285b651a428e95d3a9de1a0ad, type: 3}
   - {fileID: 4500467943839585359, guid: c9a399ecc57139b4398a662b1e48f283, type: 3}
   - {fileID: 6055365854558686605, guid: 839cc8100361c614d9d35b58b00cab8b, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -20265,7 +20462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: 83ce22c74a69cb84d840260dfe9927f2, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.5102883
+      value: 0.999
       objectReference: {fileID: 0}
     - target: {fileID: 7800046652376394697, guid: 83ce22c74a69cb84d840260dfe9927f2, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -21041,6 +21238,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -22352,6 +22553,9 @@ MonoBehaviour:
   - {fileID: 1317905730782129518, guid: 3d6450a285b651a428e95d3a9de1a0ad, type: 3}
   - {fileID: 4500467943839585359, guid: c9a399ecc57139b4398a662b1e48f283, type: 3}
   - {fileID: 6055365854558686605, guid: 839cc8100361c614d9d35b58b00cab8b, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -22608,6 +22812,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -23333,6 +23541,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -23854,6 +24066,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -24162,6 +24378,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -24659,7 +24879,7 @@ Transform:
   m_GameObject: {fileID: 961739749}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.5100002, z: -5.57}
+  m_LocalPosition: {x: 0, y: 3.98, z: 0.77999973}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24830,6 +25050,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -25148,6 +25372,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -25750,6 +25978,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -25970,6 +26202,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -26300,6 +26536,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -27123,6 +27363,9 @@ MonoBehaviour:
   - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
   - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
   - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -27468,6 +27711,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -27581,7 +27828,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 9cd604b53cf2c2d46a051f166b4f87ec, type: 2}
     - target: {fileID: 4742473837712756890, guid: fd6799cc1f364d747b32ba83f457f9ca, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.5027231
+      value: 0.999
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27875,6 +28122,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -28266,6 +28517,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -28335,6 +28590,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -28897,6 +29156,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -29071,6 +29334,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -29527,6 +29794,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -30087,6 +30358,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -30608,6 +30883,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -30890,7 +31169,7 @@ Transform:
   m_GameObject: {fileID: 1170437620}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.5100002, z: -5.57}
+  m_LocalPosition: {x: 0, y: 3.98, z: 0.77999973}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -31591,6 +31870,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -31660,6 +31943,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -31733,7 +32020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: 83ce22c74a69cb84d840260dfe9927f2, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.5102883
+      value: 0.999
       objectReference: {fileID: 0}
     - target: {fileID: 7800046652376394697, guid: 83ce22c74a69cb84d840260dfe9927f2, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -31871,6 +32158,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -31998,6 +32289,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e737e618f7618c14bb24d71505565bda, type: 2}
+    - target: {fileID: 683338978547104269, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 796970629314315265, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
       propertyPath: m_Size.z
       value: 17.94
@@ -32005,6 +32300,26 @@ PrefabInstance:
     - target: {fileID: 796970629314315265, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
       propertyPath: m_Center.z
       value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 836741378330092572, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982222019161359533, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 999039291860495854, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100029320402821404, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178264989612460843, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1229461206665791385, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
       propertyPath: m_Name
@@ -32014,21 +32329,97 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1724562785648477786, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+    - target: {fileID: 1407920474895609914, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419322673713033363, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442855346990294985, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1479833227646986876, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618433529323006596, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724562785648477786, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1743055688187330256, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1816806202901322575, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2142339589058472528, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631993815002653450, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709242045444276216, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2810975611283579142, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035026789494683946, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042511831954732674, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3079856418586717836, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3269705851175649182, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3353651241703284314, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3478129948577338889, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3544931632504487310, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3601767891843189817, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3651124515239405778, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
       propertyPath: m_Name
       value: SpawnTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 3660640237817105816, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4247578137039988976, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4250871886899224746, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
       propertyPath: m_Name
@@ -32042,6 +32433,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 8.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4372068846915435356, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4426308703974630440, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
       propertyPath: m_Name
       value: SpawnTrigger
@@ -32049,6 +32444,10 @@ PrefabInstance:
     - target: {fileID: 4555224652065008520, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
       propertyPath: m_Name
       value: SpawnTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558960354052291387, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4721560095301092800, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
       propertyPath: m_IsActive
@@ -32062,6 +32461,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5445266893708785176, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525264657436175860, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5530946882767339050, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966016392980624742, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6255229713852702669, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6371290334479500981, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
       propertyPath: m_Name
       value: SpawnTrigger
@@ -32074,9 +32493,25 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 9.749527
       objectReference: {fileID: 0}
+    - target: {fileID: 6520689419039819981, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758282535750980275, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6843707895746616548, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
       propertyPath: m_Name
       value: SpawnTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944010543804131432, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7037476554242679799, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7279358541731820864, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
       propertyPath: m_Size.z
@@ -32126,17 +32561,53 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7841372558000684074, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8325663105683007848, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
       propertyPath: m_Name
       value: SpawnTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452626899131241462, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8625532892714651902, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628297897325439089, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749887562285119243, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8823083139087499939, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
       propertyPath: m_Name
       value: SpawnTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 8833581296150491054, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8979284823919620510, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9031130907969006073, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
       propertyPath: m_Name
       value: SpawnTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 9066437420007046107, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9203142293180779772, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32863,6 +33334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -33058,6 +33533,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -33405,6 +33884,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -33538,6 +34021,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -33738,6 +34225,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -34045,6 +34536,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -34153,6 +34648,9 @@ MonoBehaviour:
   - {fileID: 1317905730782129518, guid: 3d6450a285b651a428e95d3a9de1a0ad, type: 3}
   - {fileID: 4500467943839585359, guid: c9a399ecc57139b4398a662b1e48f283, type: 3}
   - {fileID: 6055365854558686605, guid: 839cc8100361c614d9d35b58b00cab8b, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -34313,6 +34811,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -34478,6 +34980,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -34681,6 +35187,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -34828,6 +35338,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -35012,6 +35526,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -35329,6 +35847,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -36129,6 +36651,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -36260,6 +36786,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -36416,6 +36946,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -36673,6 +37207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -36781,6 +37319,9 @@ MonoBehaviour:
   - {fileID: 1317905730782129518, guid: 3d6450a285b651a428e95d3a9de1a0ad, type: 3}
   - {fileID: 4500467943839585359, guid: c9a399ecc57139b4398a662b1e48f283, type: 3}
   - {fileID: 6055365854558686605, guid: 839cc8100361c614d9d35b58b00cab8b, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -36903,6 +37444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -36972,6 +37517,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -38098,6 +38647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -38533,7 +39086,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: 83ce22c74a69cb84d840260dfe9927f2, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.5102883
+      value: 0.999
       objectReference: {fileID: 0}
     - target: {fileID: 7800046652376394697, guid: 83ce22c74a69cb84d840260dfe9927f2, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -38872,6 +39425,9 @@ MonoBehaviour:
   - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
   - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
   - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -40010,6 +40566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -40616,7 +41176,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 9cd604b53cf2c2d46a051f166b4f87ec, type: 2}
     - target: {fileID: 4742473837712756890, guid: fd6799cc1f364d747b32ba83f457f9ca, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.5027231
+      value: 0.999
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40762,6 +41322,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -40800,6 +41364,9 @@ MonoBehaviour:
   - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
   - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
   - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -41083,6 +41650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -41328,6 +41899,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -41397,6 +41972,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -42129,6 +42708,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -42325,6 +42908,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -42472,6 +43059,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -43099,6 +43690,9 @@ MonoBehaviour:
   - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
   - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
   - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -43127,6 +43721,9 @@ MonoBehaviour:
   - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
   - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
   - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -43777,7 +44374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: 998db4a3567cbd5458d649350fa535e5, type: 3}
       propertyPath: m_LODs.Array.data[1].screenRelativeHeight
-      value: 0
+      value: 0.0040299282
       objectReference: {fileID: 0}
     - target: {fileID: 5521516550872806566, guid: 998db4a3567cbd5458d649350fa535e5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -43997,6 +44594,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -44609,6 +45210,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -44875,6 +45480,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -45068,6 +45677,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -45533,6 +46146,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -45747,6 +46364,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -45819,7 +46440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: 83ce22c74a69cb84d840260dfe9927f2, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.5102883
+      value: 0.999
       objectReference: {fileID: 0}
     - target: {fileID: 7800046652376394697, guid: 83ce22c74a69cb84d840260dfe9927f2, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -46085,6 +46706,9 @@ MonoBehaviour:
   - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
   - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
   - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -46175,6 +46799,9 @@ MonoBehaviour:
   - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
   - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
   - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -46366,6 +46993,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -46827,6 +47458,9 @@ MonoBehaviour:
   - {fileID: 1317905730782129518, guid: 3d6450a285b651a428e95d3a9de1a0ad, type: 3}
   - {fileID: 4500467943839585359, guid: c9a399ecc57139b4398a662b1e48f283, type: 3}
   - {fileID: 6055365854558686605, guid: 839cc8100361c614d9d35b58b00cab8b, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -47887,6 +48521,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -47956,6 +48594,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -48261,7 +48903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: 83ce22c74a69cb84d840260dfe9927f2, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.5102883
+      value: 0.999
       objectReference: {fileID: 0}
     - target: {fileID: 7800046652376394697, guid: 83ce22c74a69cb84d840260dfe9927f2, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -49454,6 +50096,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -49906,6 +50552,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -50007,6 +50657,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -50421,6 +51075,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -52042,6 +52700,9 @@ MonoBehaviour:
   - {fileID: 1317905730782129518, guid: 3d6450a285b651a428e95d3a9de1a0ad, type: 3}
   - {fileID: 4500467943839585359, guid: c9a399ecc57139b4398a662b1e48f283, type: 3}
   - {fileID: 6055365854558686605, guid: 839cc8100361c614d9d35b58b00cab8b, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -52134,7 +52795,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2016073330
 Transform:
   m_ObjectHideFlags: 0
@@ -52681,6 +53342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_6 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -52812,6 +53477,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -53191,7 +53860,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: 83ce22c74a69cb84d840260dfe9927f2, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.5102883
+      value: 0.999
       objectReference: {fileID: 0}
     - target: {fileID: 7800046652376394697, guid: 83ce22c74a69cb84d840260dfe9927f2, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -53306,6 +53975,9 @@ MonoBehaviour:
   - {fileID: 1317905730782129518, guid: 3d6450a285b651a428e95d3a9de1a0ad, type: 3}
   - {fileID: 4500467943839585359, guid: c9a399ecc57139b4398a662b1e48f283, type: 3}
   - {fileID: 6055365854558686605, guid: 839cc8100361c614d9d35b58b00cab8b, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -53626,6 +54298,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -54236,6 +54912,9 @@ MonoBehaviour:
   - {fileID: 3755757984932990498, guid: 0fbf7a9572037124c8448dd14575a51a, type: 3}
   - {fileID: 398580913727538333, guid: ce0e3bf9adb8ec949b5f0ee573e67a96, type: 3}
   - {fileID: 3485977075327026951, guid: 2f0330dc5f89e9b4086a3461a8041f73, type: 3}
+  - {fileID: 6132323613396459140, guid: 2f677b55ff6ab72489c6cbb73bad69b1, type: 3}
+  - {fileID: 4276183700060381387, guid: 278dcafa63b879e4fa881bf5a6ac2b09, type: 3}
+  - {fileID: 6060393633300884097, guid: 02b01cae79221f049a22728de1efa73a, type: 3}
   maxObstacleCount: 1
   minObstacleCount: 1
   widthOffset: 1
@@ -54338,6 +55017,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Name
       value: Fence_6 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7740221610081528707, guid: e338c350789ea8e42a2ce97260e85fe3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -57792,11 +58475,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8369482635828571085, guid: 5b43fe94311aeaf4ebb2d2a30876be4d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.53
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8369482635828571085, guid: 5b43fe94311aeaf4ebb2d2a30876be4d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.5
+      value: 7.85
       objectReference: {fileID: 0}
     - target: {fileID: 8369482635828571085, guid: 5b43fe94311aeaf4ebb2d2a30876be4d, type: 3}
       propertyPath: m_LocalRotation.w

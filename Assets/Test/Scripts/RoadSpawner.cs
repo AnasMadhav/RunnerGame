@@ -43,7 +43,7 @@ public class RoadSpawner : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(distance);
+        //Debug.Log(distance);
         distance = player.distanceCovered;
         if(distance > oldKeralaDistance && !isMidKerala)
         {

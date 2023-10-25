@@ -23,23 +23,33 @@ public class JSONFetcher : MonoBehaviour
 
     public GameManager gameManager;
 
+
     private void Awake()
     {
         choiceA.onClick.AddListener(()=> CheckAnswer("A", choiceA));
         choiceB.onClick.AddListener(() => CheckAnswer("B", choiceB));
         choiceC.onClick.AddListener(() => CheckAnswer("C", choiceC));
         choiceD.onClick.AddListener(() => CheckAnswer("D", choiceD));
+        questionText.gameObject.SetActive(false);
+        choiceA.gameObject.SetActive(false);
+        choiceB.gameObject.SetActive(false);    
+        choiceC.gameObject.SetActive(false);
+        choiceD.gameObject.SetActive(false);
+        feedbackText.gameObject.SetActive(false);
     }
     private void Start()
     {
         LoadData();
         if(PlayerPrefs.HasKey("currentQuestionIndex"))
         {
-
+            currentQuestionIndex = PlayerPrefs.GetInt("currentQuestionIndex")+1;
+            Debug.Log("Key Exist");
+            Debug.Log(PlayerPrefs.GetInt("currentQuestionIndex"));
         }
         else
         {
             PlayerPrefs.SetInt("currentQuestionIndex", 0);
+            Debug.Log("Key Not Exist");
         }
       
     }
@@ -78,6 +88,12 @@ public class JSONFetcher : MonoBehaviour
     {
         if (jsonData != null)
         {
+            questionText.gameObject.SetActive(true);
+            choiceA.gameObject.SetActive(true);
+            choiceB.gameObject.SetActive(true);
+            choiceC.gameObject.SetActive(true);
+            choiceD.gameObject.SetActive(true);
+            feedbackText.gameObject.SetActive(true);
             if (currentQuestionIndex < jsonData.data.Count)
             {
                 QuestionData currentQuestion = jsonData.data[currentQuestionIndex];
@@ -102,6 +118,7 @@ public class JSONFetcher : MonoBehaviour
     public void CheckAnswer(string selectedChoice,Button ClickedButton)
     {
         Debug.Log(selectedChoice);  
+
         if (currentQuestionIndex < jsonData.data.Count)
         {
             QuestionData currentQuestion = jsonData.data[currentQuestionIndex];
@@ -110,13 +127,14 @@ public class JSONFetcher : MonoBehaviour
                 feedbackText.text = "Correct!";
                 Debug.Log("correct");
                 ClickedButton.GetComponent<Image>().color = Color.green;
-                gameManager.CoinDoubling(); 
+                gameManager.CoinDoubling(2); 
             }
             else
             {
                 Debug.Log("Incorrect. The correct answer is " + currentQuestion.answer_text);
                 feedbackText.text = "Incorrect. The correct answer is " + currentQuestion.answer_text;
                 ClickedButton.GetComponent<Image>().color = Color.red;
+                gameManager.CoinDoubling(1);
                 switch (currentQuestion.answer)
                 {
                     case "A":choiceA.GetComponent<Image>().color = Color.green;
@@ -137,16 +155,18 @@ public class JSONFetcher : MonoBehaviour
     IEnumerator Delay()
     {
         yield return new WaitForSeconds(5f);
-        PlayerPrefs.SetInt("currentQuestionIndex", currentQuestionIndex);
+       
         currentQuestionIndex++;
+        PlayerPrefs.SetInt("currentQuestionIndex", currentQuestionIndex);
         GameoverUI.SetActive(true);
+       gameManager.UICharacter.SetActive(true);
         //ShowNextQuestion();
         
         choiceD.GetComponent<Image>().color = Color.white;
         choiceA.GetComponent<Image>().color = Color.white;
         choiceB.GetComponent<Image>().color = Color.white;
         choiceC.GetComponent<Image>().color = Color.white;
-        yield return new WaitForSeconds(.5f);
+        //yield return new WaitForSeconds(.5f);
         QUizUI.SetActive(false);
     }
 }

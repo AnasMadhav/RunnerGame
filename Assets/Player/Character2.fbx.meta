@@ -14,6 +14,26 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Tex_001
     second: {fileID: 2100000, guid: e5a9e890a11724c43b0a3e2c356adc3e, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: NewHairUnFinishedToUnwrap_Tex.001_BaseColor
+    second: {fileID: 2800000, guid: 04b17426fc6d08b4c8f1cbe799452703, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: NewHairUnFinishedToUnwrap_Tex.001_Metallic
+    second: {fileID: 2800000, guid: cb3228f87c52e824294cac9014a767c3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: NewHairUnFinishedToUnwrap_Tex.001_Normal
+    second: {fileID: 2800000, guid: eb28a5c052c7ba54f83c545ccab9d861, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: NewHairUnFinishedToUnwrap_Tex.001_Roughness
+    second: {fileID: 2800000, guid: a827d15c0df27224991956348ed0e82a, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

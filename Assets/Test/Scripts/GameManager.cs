@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     GameObject collectiblePlatfrom;
     public GameObject MainCamera;
     public GameObject UICamera;
+    public GameObject UICharacter;
     public static int coinCount, totalCoinCount,collectibleCount;
 
     //
@@ -56,7 +57,7 @@ public class GameManager : MonoBehaviour
     {
         coinCount++;
         coinCountText.text = coinCount.ToString();
-
+        //player.effect.play
         totalCoinCount = PlayerPrefs.GetInt("Coin1") + 1;
         PlayerPrefs.SetInt("Coin1", totalCoinCount);
         totalCoin.text = PlayerPrefs.GetInt("Coin1").ToString();
@@ -94,11 +95,12 @@ public class GameManager : MonoBehaviour
     {
         DistanceUpdate();
         StartCoroutine(GameOverUi());
+        QuizCoinText.text = coinCount.ToString();
     }
     IEnumerator GameOverUi()
     {
         yield return new WaitForSeconds(gameOverDelay);
-        UIManager.EnablePanel("GameOverPanel");
+        UIManager.EnablePanel("Popup");
         MainCamera.SetActive(false);
         UICamera.SetActive(true);
     }
@@ -140,10 +142,10 @@ public class GameManager : MonoBehaviour
         playerMovement.animator.SetFloat("Speed", playerMovement.initialAnimationSpeed);
         CollectibleUpdate();
     }
-    public void CoinDoubling()
+    public void CoinDoubling(int No)
     {
         totalCoinCount = PlayerPrefs.GetInt("Coin1");
-        int DoublecoinCount = coinCount * 2;
+        int DoublecoinCount = coinCount * No;
         PlayerPrefs.SetInt("Coin1", totalCoinCount + DoublecoinCount);
         QuizCoinText.text = DoublecoinCount.ToString();
         

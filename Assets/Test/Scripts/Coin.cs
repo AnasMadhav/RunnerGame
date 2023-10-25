@@ -36,7 +36,7 @@ public class Coin : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             gameManager.CoinUpdate();
-
+            
             Destroy(gameObject);
         }
     }

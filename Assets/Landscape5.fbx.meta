@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a94d2810d88dc46438641348f1b40a5d
+guid: 063b810222830be41a3ab7411547db62
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,13 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: bill_board
-    second: {fileID: 2100000, guid: 85a6e91a350f5d241ae1ef7649afc928, type: 2}
+      name: L5
+    second: {fileID: 2100000, guid: bd75e2484d33dab42be97e51b1f2c21d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: bill_bord_add
-    second: {fileID: 2100000, guid: d719b2c67e930d4469997a32d84adcd6, type: 2}
+      name: bill_board_3
+    second: {fileID: 2100000, guid: f0035c9215a81d848a21d894253d5051, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

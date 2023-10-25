@@ -24,10 +24,10 @@ public class GameOverPopup : MonoBehaviour
         if (popup.activeSelf)
         {
             Character.gameObject.SetActive(true);
-            int val = (int)displayTime;
+            int val = 15-(int)timer;
             TimeText.text = val.ToString();
 
-            Character.SetTrigger("Sad");
+            //Character.SetTrigger("Sad");
             // Update the timer
             timer += Time.deltaTime;
 

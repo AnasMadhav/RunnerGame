@@ -14,8 +14,14 @@ public class JSONFetcher : MonoBehaviour
     public Button choiceD;
     public Text feedbackText;
 
+
+    public GameObject QUizUI;
+    public GameObject GameoverUI;
+
     private RootData jsonData;
     private int currentQuestionIndex;
+
+    public GameManager gameManager;
 
     private void Awake()
     {
@@ -104,6 +110,7 @@ public class JSONFetcher : MonoBehaviour
                 feedbackText.text = "Correct!";
                 Debug.Log("correct");
                 ClickedButton.GetComponent<Image>().color = Color.green;
+                gameManager.CoinDoubling(); 
             }
             else
             {
@@ -132,10 +139,14 @@ public class JSONFetcher : MonoBehaviour
         yield return new WaitForSeconds(5f);
         PlayerPrefs.SetInt("currentQuestionIndex", currentQuestionIndex);
         currentQuestionIndex++;
+        GameoverUI.SetActive(true);
         //ShowNextQuestion();
+        
         choiceD.GetComponent<Image>().color = Color.white;
         choiceA.GetComponent<Image>().color = Color.white;
         choiceB.GetComponent<Image>().color = Color.white;
         choiceC.GetComponent<Image>().color = Color.white;
+        yield return new WaitForSeconds(.5f);
+        QUizUI.SetActive(false);
     }
 }

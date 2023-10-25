@@ -18,7 +18,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI collectibleName,collectibleInfo;
     List<GameObject> collectibleMap;
     GameObject collectiblePlatfrom;
+    public GameObject MainCamera;
+    public GameObject UICamera;
     public static int coinCount, totalCoinCount,collectibleCount;
+
+    //
+    [SerializeField] TextMeshProUGUI QuizCoinText;
     void Start()
     {
         player = GameObject.FindWithTag("Player").gameObject;
@@ -94,6 +99,8 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(gameOverDelay);
         UIManager.EnablePanel("GameOverPanel");
+        MainCamera.SetActive(false);
+        UICamera.SetActive(true);
     }
     // COLLECTIBLE UI
     public void CollectibleUiOpen()
@@ -132,5 +139,13 @@ public class GameManager : MonoBehaviour
         playerMovement.forwardSpeed = 8f;
         playerMovement.animator.SetFloat("Speed", playerMovement.initialAnimationSpeed);
         CollectibleUpdate();
+    }
+    public void CoinDoubling()
+    {
+        totalCoinCount = PlayerPrefs.GetInt("Coin1");
+        int DoublecoinCount = coinCount * 2;
+        PlayerPrefs.SetInt("Coin1", totalCoinCount + DoublecoinCount);
+        QuizCoinText.text = DoublecoinCount.ToString();
+        
     }
 }

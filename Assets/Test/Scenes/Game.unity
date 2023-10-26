@@ -17994,6 +17994,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4096240655690616074, guid: 6352bcb95be507c43a03054b412150ce, type: 3}
   m_PrefabInstance: {fileID: 641803929}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &642490925 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7457804760424662488, guid: 5b43fe94311aeaf4ebb2d2a30876be4d, type: 3}
+  m_PrefabInstance: {fileID: 2940641283770758441}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &646964760
 GameObject:
   m_ObjectHideFlags: 0
@@ -34426,7 +34431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1229461206665791385, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1229461206665791385, guid: 83bc5ba173d220e4eb16c4ec503b3691, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -39741,8 +39746,8 @@ MonoBehaviour:
   - {fileID: 2016073329}
   - {fileID: 1558680571}
   - {fileID: 1503785661}
-  oldKeralaDistance: 100
-  midKeralaDistance: 400
+  oldKeralaDistance: 1000
+  midKeralaDistance: 4000
   newKeralaDistance: 1000
   platforms: {fileID: 0}
   midPlatform: {fileID: 0}
@@ -52331,6 +52336,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d95c324d9764c2f42b9270f3ec921521, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: d95c324d9764c2f42b9270f3ec921521, type: 3}
       propertyPath: m_Controller
       value: 
@@ -52351,11 +52360,6 @@ PrefabInstance:
 --- !u!4 &1841571560 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d95c324d9764c2f42b9270f3ec921521, type: 3}
-  m_PrefabInstance: {fileID: 1841571559}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1841571561 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: d95c324d9764c2f42b9270f3ec921521, type: 3}
   m_PrefabInstance: {fileID: 1841571559}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1845026586
@@ -63033,7 +63037,7 @@ PrefabInstance:
     - target: {fileID: 534529142993560172, guid: 5b43fe94311aeaf4ebb2d2a30876be4d, type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 1841571561}
+      objectReference: {fileID: 642490925}
     - target: {fileID: 534529142993560172, guid: 5b43fe94311aeaf4ebb2d2a30876be4d, type: 3}
       propertyPath: maxSpeed
       value: 20
@@ -63308,7 +63312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4239168809658336536, guid: 5b43fe94311aeaf4ebb2d2a30876be4d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4495952696392965685, guid: 5b43fe94311aeaf4ebb2d2a30876be4d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

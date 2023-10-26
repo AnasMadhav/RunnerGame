@@ -106,11 +106,13 @@ public class JSONFetcher : MonoBehaviour
             }
             else
             {
-                questionText.text = "Quiz completed!";
+                currentQuestionIndex = 0;
+                ShowNextQuestion();
+               /* questionText.text = "Quiz completed!";
                 choiceA.gameObject.SetActive(false);
                 choiceB.gameObject.SetActive(false);
                 choiceC.gameObject.SetActive(false);
-                choiceD.gameObject.SetActive(false);
+                choiceD.gameObject.SetActive(false);*/
             }
         }
     }

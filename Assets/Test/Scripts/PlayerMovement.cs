@@ -149,13 +149,13 @@ public class PlayerMovement : MonoBehaviour
     {
         isSliding = true;
         animator.SetTrigger("Slide");
-        controller.center = new Vector3(0,-0.1f, 0);
-        controller.height = 0.5f;
+        controller.center = new Vector3(0,-0.63f, 0);
+        controller.height = -0.9f;
         yield return new WaitForSeconds(slideDuration);
         animator.SetTrigger("Run");
         yield return new WaitForSeconds((slideDuration - 0.25f) / Time.timeScale);
-        controller.center = new Vector3(0, 0, 0);
-        controller.height = 2f;
+        controller.center = new Vector3(0, -0.28f, 0);
+        controller.height = 1.38f;
         isSliding = false;
     }
 

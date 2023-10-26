@@ -2106,15 +2106,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6729c16eaab16b24e9bf0bf8e282c791, type: 2}
+  m_sharedMaterial: {fileID: 2930861956757583151, guid: 6729c16eaab16b24e9bf0bf8e282c791, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4282974207
+  m_fontColor: {r: 1, g: 1, b: 0.28235295, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6370,6 +6370,7 @@ RectTransform:
   - {fileID: 1504049293}
   - {fileID: 3439150661476152241}
   - {fileID: 1633296905}
+  - {fileID: 1339965718}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -21529,7 +21530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!20 &1109093219
 Camera:
   m_ObjectHideFlags: 0
@@ -28048,11 +28049,11 @@ Transform:
   m_GameObject: {fileID: 1339965715}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.6782866, y: 0.00009059906, z: 113.787224}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -402.95746, y: -533.3333, z: 59.264183}
+  m_LocalScale: {x: 0.5208334, y: 0.5208334, z: 0.5208334}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 345511993}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1339965719
 MonoBehaviour:
@@ -36547,7 +36548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d95c324d9764c2f42b9270f3ec921521, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: d95c324d9764c2f42b9270f3ec921521, type: 3}
       propertyPath: m_Controller
@@ -36559,7 +36560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: d95c324d9764c2f42b9270f3ec921521, type: 3}
       propertyPath: m_ApplyRootMotion
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -45253,7 +45254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4239168809658336536, guid: 5b43fe94311aeaf4ebb2d2a30876be4d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4495952696392965685, guid: 5b43fe94311aeaf4ebb2d2a30876be4d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -50035,7 +50036,6 @@ SceneRoots:
   - {fileID: 2940641283770758441}
   - {fileID: 971118000}
   - {fileID: 1178802787}
-  - {fileID: 1339965718}
   - {fileID: 345511993}
   - {fileID: 351595610}
   - {fileID: 1170437622}

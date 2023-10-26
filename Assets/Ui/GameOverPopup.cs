@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class GameOverPopup : MonoBehaviour
 {
     public GameObject popup;
+    public GameObject GameoverPanel;
     //public Button skipButton;
     //public Button attendQuizButton;
 
@@ -36,6 +37,8 @@ public class GameOverPopup : MonoBehaviour
             {
                 // Hide the popup
                 popup.SetActive(false);
+                GameoverPanel.SetActive(true);
+                Character.gameObject.SetActive(true);
                 // Reset the timer
                 timer = 0f;
             }

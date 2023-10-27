@@ -229,32 +229,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &223486872 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1209440645395412446, guid: 7f2432e3e45c7cc4e90913e246ddd74c, type: 3}
-  m_PrefabInstance: {fileID: 5513141911588095036}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &223486875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223486872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc7c91b26689a054d88448aba6dfe424, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Use:
-    Filter: 0
-    IgnoreStartedOverGui: 1
-    RequiredFingerCount: 0
-    RequiredMouseButtons: 0
-    RequiredSelectable: {fileID: 0}
-  axis: {x: 0, y: -1, z: 0}
-  space: 1
-  sensitivity: 1
 --- !u!1001 &237767283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4488,10 +4462,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1209440645395412446, guid: 7f2432e3e45c7cc4e90913e246ddd74c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 223486875}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f2432e3e45c7cc4e90913e246ddd74c, type: 3}
 --- !u!1001 &6219496855714662907
 PrefabInstance:

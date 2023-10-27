@@ -34,9 +34,12 @@ public class ObstacleSpawner : MonoBehaviour
     }
     public void ResetObstacles()
     {
-        foreach(GameObject obstacle in obstacles)
+        if (obstacles != null)
         {
-            Destroy(obstacle);
+            foreach (GameObject obstacle in obstacles)
+            {
+                Destroy(obstacle);
+            }
         }
     }
     Vector3 GetObstaclePosition(Collider collider)
@@ -44,8 +47,11 @@ public class ObstacleSpawner : MonoBehaviour
      //  Vector3 point = new Vector3(Random.Range(collider.bounds.min.x + widthOffset, collider.bounds.max.x - widthOffset), collider.bounds.min.y,
        //   Random.Range(collider.bounds.min.z, collider.bounds.max.z));
 
+      //  Vector3 point = new Vector3(0, collider.bounds.min.y,
+      //   Random.Range(collider.bounds.min.z+betweenDistance, collider.bounds.max.z-betweenDistance));
+
         Vector3 point = new Vector3(0, collider.bounds.min.y,
-         Random.Range(collider.bounds.min.z+betweenDistance, collider.bounds.max.z-betweenDistance));
+        (collider.bounds.min.z + collider.bounds.max.z)/2);
         return point;
     }
 } 

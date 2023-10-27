@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +6,7 @@ public class CoinSpawner : MonoBehaviour
     [SerializeField] GameObject coinPrefab;
     [SerializeField] int maxCoinCount = 10, minCoinCount = 5;
     [SerializeField]  float widthOffset = 0.5f,heightOffset =1f;
+    [SerializeField] List<int> xPoints = new List<int>{ -2, 0, 2 ,0};
     GameObject[] coins;
     private void Awake()
     {
@@ -46,8 +46,11 @@ public class CoinSpawner : MonoBehaviour
     }
     Vector3 GetCoinPosition(Collider collider)
     {
-        Vector3 point = new Vector3(Random.Range(collider.bounds.min.x+widthOffset,collider.bounds.max.x-widthOffset),heightOffset, 
-            Random.Range(collider.bounds.min.z, collider.bounds.max.z));
+        // Vector3 point = new Vector3(Random.Range(collider.bounds.min.x+widthOffset,collider.bounds.max.x-widthOffset),heightOffset, 
+        //  Random.Range(collider.bounds.min.z, collider.bounds.max.z));
+        int val = Random.Range(0, 3);
+        Vector3 point = new Vector3(xPoints[val], heightOffset,
+           Random.Range(collider.bounds.min.z, collider.bounds.max.z));
         return point; 
     }
 }

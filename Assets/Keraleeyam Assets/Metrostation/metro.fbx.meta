@@ -3,7 +3,52 @@ guid: 66e8e095f7f6b694598eeb5dcdd7af28
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_B02
+    second: {fileID: 2100000, guid: 7c619c1ac4e10e1418336bdc61388426, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_H06
+    second: {fileID: 2100000, guid: dd49832b3a1392943a480112dcb3cb9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_M01
+    second: {fileID: 2100000, guid: cb6f777f758e2ae479534d32228a34bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_M01_1
+    second: {fileID: 2100000, guid: ca3ead6ad51b5134d917d92785702d94, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_M01_2
+    second: {fileID: 2100000, guid: cde5850e8ba46ae4298cb70bdd575d20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_M06
+    second: {fileID: 2100000, guid: 2565ebf2dcf93c14ebbffde4d930d0eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrontColor
+    second: {fileID: 2100000, guid: 8b19261c29fff97458ac29cb6e0e67d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roofing_Slate_Dark
+    second: {fileID: 2100000, guid: 59b747a05efde27479677fc56db3d8e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Color_M01_1
+    second: {fileID: 2100000, guid: aba6da266fc34394b9fe616157cc8f02, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

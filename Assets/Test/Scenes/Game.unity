@@ -3345,7 +3345,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &507482050
 Transform:
   m_ObjectHideFlags: 0
@@ -3373,7 +3373,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6786876424b92d34ea850e7ef1ac52e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  assetBundleURL: https://drive.google.com/uc?export=download&id=1d7fkbjLciNeUbhbuRdbcibjn0yKPKcFb
+  loadingBar: {fileID: 0}
+  progressText: {fileID: 0}
+  googleDriveFileID: 
+  assetName: 
+  assetBundleName: 
 --- !u!1 &531356227
 GameObject:
   m_ObjectHideFlags: 0
@@ -5599,7 +5603,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 80
+  far clip plane: 100
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -5627,7 +5631,7 @@ Transform:
   m_GameObject: {fileID: 961739749}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: -2.0700002}
+  m_LocalPosition: {x: 0, y: 3.8200002, z: -0.8300004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6686,7 +6690,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!20 &1109093219
 Camera:
   m_ObjectHideFlags: 0
@@ -6789,7 +6793,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109093218}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!4 &1109093222
 Transform:
   m_ObjectHideFlags: 0
@@ -7677,7 +7681,7 @@ MonoBehaviour:
     FieldOfView: 60
     OrthographicSize: 5
     NearClipPlane: 0.3
-    FarClipPlane: 80
+    FarClipPlane: 100
     Dutch: 0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
@@ -7701,7 +7705,7 @@ Transform:
   m_GameObject: {fileID: 1170437620}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: -2.0700002}
+  m_LocalPosition: {x: 0, y: 3.8200002, z: -0.8300004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9013,12 +9017,9 @@ MonoBehaviour:
   - {fileID: 2016073329}
   - {fileID: 1558680571}
   - {fileID: 1229461207602659724}
-  oldKeralaDistance: 100
-  midKeralaDistance: 400
-  newKeralaDistance: 1000
-  platforms: {fileID: 0}
-  midPlatform: {fileID: 0}
-  newPlatform: {fileID: 0}
+  oldKeralaDistance: 1000
+  midKeralaDistance: 4000
+  newKeralaDistance: 10000
   roads: []
   coveredRoad: []
   tileOffset: 30
@@ -10956,7 +10957,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d95c324d9764c2f42b9270f3ec921521, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.888
+      value: -0.946
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d95c324d9764c2f42b9270f3ec921521, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13306,6 +13307,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 386318289580053342, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 386318289580053342, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100304111906306421, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100304111906306421, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 1534213080963077995, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -13346,9 +13363,105 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2264012441648523997, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264012441648523997, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2509723824205213634, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 2509723824205213634, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107976252292972197, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107976252292972197, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 3218485119409831843, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3218485119409831843, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003308403114297336, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003308403114297336, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4609346573675841774, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4609346573675841774, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239800698486351775, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239800698486351775, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617870119761820875, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617870119761820875, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833484852163097140, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833484852163097140, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477113121693301661, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477113121693301661, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350412513905653000, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350412513905653000, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 8928449916628358856, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
       propertyPath: m_Name
       value: OldKerala
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928449916628358856, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8947669408308320195, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15470,11 +15583,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8369482635828571085, guid: 5b43fe94311aeaf4ebb2d2a30876be4d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.02
+      value: 1.84
       objectReference: {fileID: 0}
     - target: {fileID: 8369482635828571085, guid: 5b43fe94311aeaf4ebb2d2a30876be4d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5
+      value: 6.24
       objectReference: {fileID: 0}
     - target: {fileID: 8369482635828571085, guid: 5b43fe94311aeaf4ebb2d2a30876be4d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18533,9 +18646,65 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 179762837946168454, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 179762837946168454, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 1370780980640965604, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
       propertyPath: m_Name
       value: MetroPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370780980640965604, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965274430683915873, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2015297891172064847, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2015297891172064847, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032389782063629858, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032389782063629858, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106180614395962905, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106180614395962905, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2497129437690588918, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2497129437690588918, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593807399148819265, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593807399148819265, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: minCoinCount
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3492787744303694315, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18576,6 +18745,70 @@ PrefabInstance:
     - target: {fileID: 3492787744303694315, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5100094544928580158, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5100094544928580158, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5469147465552415869, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5469147465552415869, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6221718930493672920, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6221718930493672920, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6283207818159533360, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6283207818159533360, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903178881029838702, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903178881029838702, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577090532667568300, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577090532667568300, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7942158392263648549, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7942158392263648549, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217798489323272609, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217798489323272609, guid: edffcfc0b85c8a74daee62b6c3e5d796, type: 3}
+      propertyPath: minCoinCount
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19848,9 +20081,77 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 417975870382771382, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 417975870382771382, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019370894020813721, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019370894020813721, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 3131531779367496981, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3131531779367496981, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 3791575942513591775, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
       propertyPath: m_Name
       value: MidKerala
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791575942513591775, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834591146878816441, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834591146878816441, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409037199882927512, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409037199882927512, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908645530670431929, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908645530670431929, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005360613358655839, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005360613358655839, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093463917073998142, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093463917073998142, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: minCoinCount
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5346916655193270056, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19891,6 +20192,30 @@ PrefabInstance:
     - target: {fileID: 5346916655193270056, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709322112383833997, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709322112383833997, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774375410833220236, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774375410833220236, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: minCoinCount
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132803989230438461, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: maxCoinCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132803989230438461, guid: 122c332a321e8fd40880a5e81cdb808f, type: 3}
+      propertyPath: minCoinCount
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

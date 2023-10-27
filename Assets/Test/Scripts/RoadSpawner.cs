@@ -10,7 +10,7 @@ public class RoadSpawner : MonoBehaviour
     [SerializeField] int distance;
     [SerializeField] GameObject[] keralaMaps;
     [SerializeField] int oldKeralaDistance, midKeralaDistance, newKeralaDistance;
-    [SerializeField] GameObject platforms, midPlatform,newPlatform;
+    GameObject platforms, midPlatform,newPlatform;
     [HideInInspector]public List<GameObject> roads,coveredRoad;
     List<GameObject> roadTile;
     [SerializeField] float tileOffset = 30f;
@@ -20,7 +20,7 @@ public class RoadSpawner : MonoBehaviour
     bool isMidKerala,isNewKerala;
     void Start()
     {
-       // distance = PlayerPrefs.GetInt("Distance");
+        distance = PlayerPrefs.GetInt("Distance");
         coveredRoad = new List<GameObject>();
         ChangeInitialMap(distance);
         isTransition = true;

@@ -65,6 +65,10 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
       //  velocity.y += gravity * Time.deltaTime;
+       if(gameObject.transform.position.y > 3f)
+        {
+            isGrounded = false;
+        }
         animator.SetBool("Move", isMovable);
         distanceCovered = (int)gameObject.transform.position.z;
         if (isMovable)

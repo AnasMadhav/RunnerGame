@@ -23,8 +23,9 @@ public class GameManager : MonoBehaviour
     public GameObject UICharacter;
     public static int coinCount, totalCoinCount, collectibleCount;
 
-    public AudioClip CoinSound;
+    public AudioClip CoinSound,GameOverAudio,timerBeep,finalBeep;
     public AudioSource audioSource;
+    public AudioSource BG_Audio;
 
     //
     [SerializeField] TextMeshProUGUI QuizCoinText;
@@ -97,6 +98,9 @@ public class GameManager : MonoBehaviour
     }
     public void GameOver()
     {
+        BG_Audio.Stop();
+        audioSource.PlayOneShot(GameOverAudio);
+
         DistanceUpdate();
         StartCoroutine(GameOverUi());
         QuizCoinText.text = coinCount.ToString();
@@ -113,16 +117,16 @@ public class GameManager : MonoBehaviour
     {
         UIManager.EnablePanel("SpecialCollectiblePanel");
         playerMovement.isMovable = false;
-        playerMovement.animator.SetFloat("Speed", 0);
+        playerMovement.animator.SetBool("Move", false);
     }
 
     public void LoadCollectibleData(string name,Sprite image,string info,GameObject platform,List<GameObject>map)
     {
         collectibleName.text = name;
-        collectibleUiImage.sprite = image;
+    //    collectibleUiImage.sprite = image;
         collectibleInfo.text = info;
-        collectiblePlatfrom = platform;
-        collectibleMap = map;
+      //  collectiblePlatfrom = platform;
+     //   collectibleMap = map;
     }
     public void CollectibleClose()
     {
@@ -138,12 +142,13 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator CollectibleUiClose()
     {
-        UIManager.EnablePanel("HudPanel");
-        StartCoroutine(ChangeMap());    
+        collectibleUi.GetComponent<Animator>().Play("CollectibleUiClose");
+       // StartCoroutine(ChangeMap());    
         yield return new WaitForSeconds(collectibleDelay);
+        UIManager.EnablePanel("HudPanel");
         playerMovement.isMovable = true;
-        playerMovement.forwardSpeed = 8f;
-        playerMovement.animator.SetFloat("Speed", playerMovement.initialAnimationSpeed);
+        playerMovement.forwardSpeed = 15f;
+        playerMovement.animator.SetBool("Move",true);
         CollectibleUpdate();
     }
     public void CoinDoubling(int No)

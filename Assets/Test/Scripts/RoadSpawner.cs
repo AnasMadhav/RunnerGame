@@ -20,7 +20,7 @@ public class RoadSpawner : MonoBehaviour
     bool isMidKerala,isNewKerala;
     void Start()
     {
-       // distance = PlayerPrefs.GetInt("Distance");
+       distance = PlayerPrefs.GetInt("Distance");
         coveredRoad = new List<GameObject>();
         ChangeInitialMap(distance);
         isTransition = true;
@@ -187,8 +187,13 @@ public class RoadSpawner : MonoBehaviour
             {
                 movedRoad.gameObject.GetComponent<CoinSpawner>().SpawnCoins();
             }
-            specialsSpawner.SetRoad(movedRoad);
-            specialsSpawner.SpawnCollectibles(movedRoad);
+            if (!movedRoad.gameObject.GetComponent<SpecialsSpawner>() != null)
+            {
+                movedRoad.gameObject.GetComponent<SpecialsSpawner>().SetRoad(movedRoad);
+                movedRoad.gameObject.GetComponent<SpecialsSpawner>().SpawnCollectibles(movedRoad);
+            }
+           // specialsSpawner.SetRoad(movedRoad);
+          //  specialsSpawner.SpawnCollectibles(movedRoad);
             movedRoad.transform.position = new Vector3(0, 0, newZ);
             roads.Add(movedRoad);
             if (!movedRoad.transform.Find("SpawnTrigger").gameObject.activeSelf)

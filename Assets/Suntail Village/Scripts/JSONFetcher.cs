@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class JSONFetcher : MonoBehaviour
 {
-    private string jsonUrl = "https://drive.google.com/uc?export=download&id=1IJMtxqsBg5nxjw-JXdJTe92H_1P6ViM-";
+    private string jsonUrl = "https://drive.google.com/uc?export=download&id=1ted2BL-9v8PhNcle4n0G1NmpWFmKg9lI";
 
     public Text questionText;
     public Button choiceA;
@@ -15,7 +15,7 @@ public class JSONFetcher : MonoBehaviour
     public Text feedbackText;
 
 
-    public GameObject QUizUI;
+    public GameObject QUizUI,loading,failed;
     public GameObject GameoverUI;
 
     private RootData jsonData;
@@ -36,10 +36,12 @@ public class JSONFetcher : MonoBehaviour
         choiceC.gameObject.SetActive(false);
         choiceD.gameObject.SetActive(false);
         feedbackText.gameObject.SetActive(false);
+        failed.gameObject.SetActive(false);
     }
     private void Start()
     {
         LoadData();
+        loading.SetActive(true);
         if(PlayerPrefs.HasKey("currentQuestionIndex"))
         {
             currentQuestionIndex = PlayerPrefs.GetInt("currentQuestionIndex")+1;
@@ -66,6 +68,9 @@ public class JSONFetcher : MonoBehaviour
         if (www.isNetworkError || www.isHttpError)
         {
             Debug.LogError("Error: " + www.error);
+            failed.gameObject.SetActive(true);
+            StartCoroutine(FailedDelay());
+
         }
         else
         {
@@ -94,10 +99,12 @@ public class JSONFetcher : MonoBehaviour
             choiceC.gameObject.SetActive(true);
             choiceD.gameObject.SetActive(true);
             feedbackText.gameObject.SetActive(true);
+            loading.SetActive(false);
             if (currentQuestionIndex < jsonData.data.Count)
             {
+
                 QuestionData currentQuestion = jsonData.data[currentQuestionIndex];
-                questionText.text = currentQuestion.question + "\n" +
+                questionText.text = currentQuestion.question + "\n" + "\n" +
                    "A. " + currentQuestion.choices.A + "\n" +
                    "B. " + currentQuestion.choices.B + "\n" +
                    "C. " + currentQuestion.choices.C + "\n" +
@@ -169,6 +176,13 @@ public class JSONFetcher : MonoBehaviour
         choiceB.GetComponent<Image>().color = Color.white;
         choiceC.GetComponent<Image>().color = Color.white;
         //yield return new WaitForSeconds(.5f);
+        QUizUI.SetActive(false);
+    }
+    IEnumerator FailedDelay()
+    {
+        yield return new WaitForSeconds(2f);
+        failed.SetActive(false);
+        GameoverUI.SetActive(true);
         QUizUI.SetActive(false);
     }
 }

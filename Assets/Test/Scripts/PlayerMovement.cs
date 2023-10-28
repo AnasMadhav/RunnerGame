@@ -189,11 +189,13 @@ public class PlayerMovement : MonoBehaviour
     {
         while(currentTime>0)
         {
+            gameManager.audioSource.PlayOneShot(gameManager.timerBeep);
           //  gameManager.TimerUpdate();
             currentTime -= 1;
             yield return new WaitForSeconds(1f);
         }
         gameManager.DisableTimer();
+        gameManager.audioSource.PlayOneShot(gameManager.finalBeep);
         isMovable = true;
      //   yield return null;
     }

@@ -5,56 +5,49 @@ using UnityEngine.UI;
 
 public class VolumeController : MonoBehaviour
 {
-    private bool isMute = false;
-    public List<AudioSource> sources;
-    public GameObject UnMuteButton, MutefButton;
-    // Start is called before the first frame update
+   
+       // Reference to all AudioSources in your scene
+    public AudioSource[] audioSources;
+
+    // Boolean to track audio state
+    private bool isMuted = false;
+
+    // Reference to the mute and unmute buttons in your UI
+    public Button muteButton;
+    public Button unmuteButton;
+
     void Start()
     {
-        if (PlayerPrefs.HasKey("Mute"))
-        {
-            if (PlayerPrefs.GetInt("Mute") == 0)
-            {
-                isMute = true;
-                MutefButton.SetActive(false);
-                UnMuteButton.SetActive(true);
-            }
-            else
-            {
-                isMute = false;
-                MutefButton.SetActive(true);
-                UnMuteButton.SetActive(false);
-            }
+        // Initially, the game starts unmuted
+        UnmuteAudio();
 
-        }
-        PlayerPrefs.SetInt("Mute", 1);
-
-        foreach (AudioSource source in sources)
-        {
-            source.mute = isMute;
-        }
+        // Add click listeners to the mute and unmute buttons
+        muteButton.onClick.AddListener(MuteAudio);
+        unmuteButton.onClick.AddListener(UnmuteAudio);
     }
 
-    // Update is called once per frame
-    void Update()
+    void MuteAudio()
     {
-        
+        isMuted = true;
+        foreach (AudioSource audioSource in audioSources)
+        {
+            audioSource.mute = true;
+        }
     }
-    public void Mute(bool mute)
+
+    void UnmuteAudio()
     {
-        isMute=mute;
-       
-        foreach (AudioSource source in sources)
+        isMuted = false;
+        foreach (AudioSource audioSource in audioSources)
         {
-            source.mute = mute;
-        }
-        if(isMute)
-        {
-            PlayerPrefs.SetInt("Mute", 1);
-        }
-        else
-        {
-            PlayerPrefs.SetInt("Mute", 0);
+            audioSource.mute = false;
         }
     }
+
+    // Save the audio state to PlayerPrefs for the next scene
+    void OnDestroy()
+    {
+        PlayerPrefs.SetInt("IsMuted", isMuted ? 1 : 0);
+    }
+
 }

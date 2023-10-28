@@ -4,34 +4,36 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    private bool isMute = false;
-    public List<AudioSource> sources;
+    private bool isMuted = false;
+    public List<AudioSource> audioSources;
     // Start is called before the first frame update
     void Start()
     {
-     if(PlayerPrefs.HasKey("Mute"))
+        if (PlayerPrefs.GetInt("IsMuted", 0) == 1)
         {
-            if(PlayerPrefs.GetInt("Mute")==0)
-            {
-                isMute = true;
-            }
-            else
-            {
-                isMute = false;
-            }
-
+            MuteAudio();
         }
-        PlayerPrefs.SetInt("Mute", 1);
-       
-        foreach(AudioSource source in sources)
+        else
         {
-            source.mute = isMute;
+            UnmuteAudio();
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    void MuteAudio()
     {
-        
+        isMuted = true;
+        foreach (AudioSource audioSource in audioSources)
+        {
+            audioSource.mute = true;
+        }
+    }
+
+    void UnmuteAudio()
+    {
+        isMuted = false;
+        foreach (AudioSource audioSource in audioSources)
+        {
+            audioSource.mute = false;
+        }
     }
 }

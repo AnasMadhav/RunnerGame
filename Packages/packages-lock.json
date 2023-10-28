@@ -261,7 +261,7 @@
       "url": "https://packages.unity.com"
     },
     "com.whinarn.unitymeshsimplifier": {
-      "version": "file:F:/Unity Exports/UnityMeshSimplifier-master/UnityMeshSimplifier-master",
+      "version": "file:C:/Users/akhil/Downloads/UnityMeshSimplifier-master/UnityMeshSimplifier-master",
       "depth": 0,
       "source": "local",
       "dependencies": {}

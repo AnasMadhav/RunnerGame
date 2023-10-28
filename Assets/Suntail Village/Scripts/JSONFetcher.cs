@@ -140,19 +140,39 @@ public class JSONFetcher : MonoBehaviour
             }
             else
             {
-                Debug.Log("Incorrect. The correct answer is " + currentQuestion.answer_text);
-                feedbackText.text = "Incorrect. The correct answer is " + currentQuestion.answer_text;
+                
+                
                 ClickedButton.GetComponent<Image>().color = Color.red;
                 gameManager.CoinDoubling(1);
                 switch (currentQuestion.answer)
                 {
-                    case "A":choiceA.GetComponent<Image>().color = Color.green;
+                    case "A":
+                        {
+                            choiceA.GetComponent<Image>().color = Color.green;
+                            Debug.Log("Incorrect. The correct answer is " + currentQuestion.choices.A);
+                            feedbackText.text = "Incorrect. The correct answer is " + currentQuestion.choices.A;
+                        }
                         break;
-                    case "B": choiceB.GetComponent<Image>().color = Color.green;
+                    case "B":
+                        {
+                            choiceB.GetComponent<Image>().color = Color.green;
+                            Debug.Log("Incorrect. The correct answer is " + currentQuestion.choices.B);
+                            feedbackText.text = "Incorrect. The correct answer is " + currentQuestion.choices.B;
+                        }
                         break;
-                    case "C": choiceC.GetComponent<Image>().color = Color.green;
+                    case "C":
+                        {
+                            choiceC.GetComponent<Image>().color = Color.green;
+                            Debug.Log("Incorrect. The correct answer is " + currentQuestion.choices.C);
+                            feedbackText.text = "Incorrect. The correct answer is " + currentQuestion.choices.C;
+                        }
                         break;
-                    case "D": choiceD.GetComponent<Image>().color = Color.green;
+                    case "D":
+                        {
+                            choiceD.GetComponent<Image>().color = Color.green;
+                            Debug.Log("Incorrect. The correct answer is " + currentQuestion.choices.D);
+                            feedbackText.text = "Incorrect. The correct answer is " + currentQuestion.choices.D;
+                        }
                         break;
                 }
             }

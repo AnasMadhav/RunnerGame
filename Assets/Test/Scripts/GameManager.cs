@@ -21,7 +21,10 @@ public class GameManager : MonoBehaviour
     public GameObject MainCamera;
     public GameObject UICamera;
     public GameObject UICharacter;
-    public static int coinCount, totalCoinCount,collectibleCount;
+    public static int coinCount, totalCoinCount, collectibleCount;
+
+    public AudioClip CoinSound;
+    public AudioSource audioSource;
 
     //
     [SerializeField] TextMeshProUGUI QuizCoinText;
@@ -55,6 +58,7 @@ public class GameManager : MonoBehaviour
     }
     public void CoinUpdate()
     {
+        audioSource.PlayOneShot(CoinSound); 
         coinCount++;
         coinCountText.text = coinCount.ToString();
         //player.effect.play

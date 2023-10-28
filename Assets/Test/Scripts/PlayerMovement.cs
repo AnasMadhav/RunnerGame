@@ -44,6 +44,8 @@ public class PlayerMovement : MonoBehaviour
     public float currentTime = 0;
     [SerializeField] public int distanceCovered;
     [SerializeField] int totalDistance;
+
+    public AudioClip JumpAudio;
     private void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -147,6 +149,7 @@ public class PlayerMovement : MonoBehaviour
         isSliding = false;
         velocity.y = Mathf.Sqrt(jumpHeight * 2 * -gravity);
         isGrounded = false;
+        gameManager.GetComponent<AudioSource>().PlayOneShot(JumpAudio);
     }
 
     private IEnumerator Slide()

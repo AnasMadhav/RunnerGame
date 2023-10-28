@@ -1,139 +1,57 @@
-Model: y_board, Polygon Count: 720
-Model: Police_station, Polygon Count: 9170
-Model: Plane (1), Polygon Count: 2800
-Model: life_mission_nameboard, Polygon Count: 12
-Model: life_mission_flat, Polygon Count: 1234
-Model: Plane, Polygon Count: 2800
-Model: Road_Stopline_1, Polygon Count: 1036
-Model: Road_Stopline_1 (1), Polygon Count: 74
-Model: Road Cross Road, Polygon Count: 108
-Model: Bank, Polygon Count: 5839
-Model: Building_A, Polygon Count: 40302
-Model: Highway Straight 1 (3), Polygon Count: 80
-Model: top1, Polygon Count: 1476
-Model: piller, Polygon Count: 1080
-Model: ADDBOARD1, Polygon Count: 252
-Model: ADDBOARD, Polygon Count: 252
-Model: add_advertA1, Polygon Count: 18
-Model: add_advertA, Polygon Count: 18
-Model: Build_G-Middle, Polygon Count: 2758
-Model: Building_B1, Polygon Count: 37896
-Model: Freeway Curve 2 (1), Polygon Count: 1084
-Model: Gas_station_A, Polygon Count: 17826
-Model: y_board (1), Polygon Count: 360
-Model: Shop_C, Polygon Count: 2388
-Model: Highway Straight 1 (2), Polygon Count: 40
-Model: Supermaket, Polygon Count: 2579
-Model: Parking_checkOut, Polygon Count: 530
-Model: Highway Straight 1 (1), Polygon Count: 40
-Model: Building_W, Polygon Count: 3135
-Model: Building_H, Polygon Count: 14073
-Model: Highway Straight 1, Polygon Count: 40
-Model: Hospital, Polygon Count: 19073
-Model: wrench, Polygon Count: 560
-Model: Car_repair, Polygon Count: 5254
-Model: Glass, Polygon Count: 676
-Model: Door_Light002, Polygon Count: 640
-Model: Door_Light, Polygon Count: 640
-Model: White_Dash_Board001, Polygon Count: 665
-Model: Tain001, Polygon Count: 6564
-Model: Sign___001, Polygon Count: 942
-Model: Sign001, Polygon Count: 96
-Model: Right_Driver__Door001, Polygon Count: 192
-Model: Right_Door_Lock_002, Polygon Count: 44
-Model: Left__Driver__Door001, Polygon Count: 192
-Model: Indside_lock_004, Polygon Count: 76
-Model: Indside_lock_003, Polygon Count: 76
-Model: Headlight001, Polygon Count: 48
-Model: Galss001, Polygon Count: 140
-Model: Driver_Glass__002, Polygon Count: 12
-Model: Driver_Glass_001, Polygon Count: 12
-Model: Driver_Cabin_Door_Lock_004, Polygon Count: 44
-Model: Down_SIde_Wall001, Polygon Count: 52
-Model: Down_Panel001, Polygon Count: 680
-Model: Dash_Board001, Polygon Count: 490
-Model: Cabin__001, Polygon Count: 2305
-Model: Cabin passage, Polygon Count: 504
-Model: White_Dash_Board, Polygon Count: 665
-Model: Tain, Polygon Count: 6564
-Model: Sign___, Polygon Count: 942
-Model: Sign, Polygon Count: 96
-Model: Right_Driver__Door, Polygon Count: 192
-Model: Right_Door_Lock_1, Polygon Count: 44
-Model: Left__Driver__Door, Polygon Count: 192
-Model: Indside_lock_2, Polygon Count: 76
-Model: Indside_lock_1, Polygon Count: 76
-Model: Headlight, Polygon Count: 48
-Model: Galss, Polygon Count: 140
-Model: Driver_Glass__1, Polygon Count: 12
-Model: Driver_Glass_, Polygon Count: 12
-Model: Driver_Cabin_Door_Lock_3, Polygon Count: 44
-Model: Down_SIde_Wall, Polygon Count: 52
-Model: Down_Panel, Polygon Count: 680
-Model: Dash_Board, Polygon Count: 490
-Model: Cabin__, Polygon Count: 2305
-Model: Train_Door_R028, Polygon Count: 174
-Model: Train_Door_R027, Polygon Count: 174
-Model: Train_Door_R026, Polygon Count: 174
-Model: Train_Door_R025, Polygon Count: 174
-Model: Train_Door_R024, Polygon Count: 174
-Model: Train_Door_R023, Polygon Count: 174
-Model: Train_Door_R022, Polygon Count: 174
-Model: Train_Door_R021, Polygon Count: 174
-Model: Train_Door_L028, Polygon Count: 174
-Model: Train_Door_L027, Polygon Count: 174
-Model: Train_Door_L026, Polygon Count: 174
-Model: Train_Door_L025, Polygon Count: 174
-Model: Train_Door_L024, Polygon Count: 174
-Model: Train_Door_L023, Polygon Count: 174
-Model: Train_Door_L022, Polygon Count: 174
-Model: Train_Door_L021, Polygon Count: 174
-Model: Sign boards_Top001, Polygon Count: 612
-Model: Seats001, Polygon Count: 3166
-Model: Handle006, Polygon Count: 8092
-Model: Handle005, Polygon Count: 8092
-Model: Handle004, Polygon Count: 8092
-Model: Handicap_chair001, Polygon Count: 124
-Model: Glass001, Polygon Count: 676
-Model: Door_Light001, Polygon Count: 640
-Model: Cabin passage001, Polygon Count: 504
-Model: Boggie_Interior_Frame001, Polygon Count: 1882
-Model: Boggie_Exterior001, Polygon Count: 2892
-Model: Boggie passage001, Polygon Count: 52
-Model: Boggie handles001, Polygon Count: 15416
-Model: Boggie Floor001, Polygon Count: 20
-Model: Boggie End part001, Polygon Count: 92
-Model: boggie end part, Polygon Count: 92
-Model: Boggie_Interior_Frame002, Polygon Count: 1882
-Model: Boggie_Interior_Frame, Polygon Count: 1882
-Model: Boggie_Exterior002, Polygon Count: 2892
-Model: Boggie_Exterior, Polygon Count: 2892
-Model: Boggie passage, Polygon Count: 52
-Model: Boggie handles002, Polygon Count: 15416
-Model: Boggie handles, Polygon Count: 15416
-Model: Boggie Floor002, Polygon Count: 24
-Model: Boggie Floor, Polygon Count: 24
-Model: Boggie End part002, Polygon Count: 92
-Model: Boggie End part, Polygon Count: 92
-Model: Highway Straight 1 (4), Polygon Count: 40
-Model: Freeway Curve 2, Polygon Count: 1084
-Model: Building_Y, Polygon Count: 2352
-Model: Building_Z, Polygon Count: 7592
-Model: bill_board__3, Polygon Count: 108
-Model: add_advertaisment__3, Polygon Count: 2
-Model: Building_R, Polygon Count: 6306
-Model: Fire_department, Polygon Count: 6906
-Model: Fire_escape_leader, Polygon Count: 1062
-Model: Building_I_1, Polygon Count: 3561
-Model: bill_board__2.001, Polygon Count: 88
-Model: add_advertaisment, Polygon Count: 2
-Model: Building_A1, Polygon Count: 29118
-Model: Building_K, Polygon Count: 29040
-Model: Building_D1, Polygon Count: 12238
-Model: Building_Q, Polygon Count: 2775
-Model: building_X, Polygon Count: 11698
-Model: Building_C1, Polygon Count: 8641
-Model: billbord_1.001, Polygon Count: 316
-Model: ADD_advertaisment, Polygon Count: 2
-Model: Building_M, Polygon Count: 5100
-Model: Building_N, Polygon Count: 5002
+Model: village house for sketchfab, Polygon Count: 4114
+Model: Village, Polygon Count: 16881
+Model: Smelter_LOD1, Polygon Count: 837
+Model: Smelter_LOD0, Polygon Count: 1019
+Model: Smelter, Polygon Count: 1410
+Model: CoconutTree (5), Polygon Count: 48
+Model: CoconutTree (4), Polygon Count: 48
+Model: CoconutTree (3), Polygon Count: 48
+Model: CoconutTree (2), Polygon Count: 48
+Model: CoconutTree (1), Polygon Count: 48
+Model: CoconutTree, Polygon Count: 48
+Model: Tomato_2_LOD0, Polygon Count: 512
+Model: Tomato_2, Polygon Count: 768
+Model: Table_2_LOD1, Polygon Count: 169
+Model: Table_2_LOD0, Polygon Count: 297
+Model: Table_2 (2), Polygon Count: 520
+Model: Shop_3_LOD1, Polygon Count: 1196
+Model: Shop_3_LOD0, Polygon Count: 2208
+Model: Shop_3 (2), Polygon Count: 3340
+Model: Roof, Polygon Count: 6556
+Model: Base, Polygon Count: 5510
+Model: Bag_3_LOD0, Polygon Count: 768
+Model: Bag_3, Polygon Count: 2016
+Model: Bag_2_LOD0, Polygon Count: 304
+Model: Bag_2, Polygon Count: 728
+Model: Cart_3_LOD1, Polygon Count: 2760
+Model: Cart_3_LOD0, Polygon Count: 3768
+Model: Cart_3 (2), Polygon Count: 3620
+Model: Cart_3 (1), Polygon Count: 1810
+Model: Case_and_food_1_LOD0, Polygon Count: 1888
+Model: Case_and_food_1 (1), Polygon Count: 1246
+Model: Case_and_food_1, Polygon Count: 1246
+Model: Shop_1_LOD1, Polygon Count: 5166
+Model: Shop_1_LOD0, Polygon Count: 7293
+Model: Shop_1 (1), Polygon Count: 8748
+Model: Shop_1, Polygon Count: 4374
+Model: Pond, Polygon Count: 80
+Model: House2, Polygon Count: 1132
+Model: terrain_) (2), Polygon Count: 536
+Model: Water, Polygon Count: 24
+Model: terrain_) (1), Polygon Count: 1072
+Model: village house for sketchfab (1), Polygon Count: 4114
+Model: village_office1, Polygon Count: 176
+Model: roof1, Polygon Count: 24
+Model: shop_1 (1), Polygon Count: 212
+Model: school, Polygon Count: 154
+Model: post, Polygon Count: 52
+Model: namebord, Polygon Count: 56
+Model: shop_1, Polygon Count: 212
+Model: CYCLE_, Polygon Count: 2450
+Model: Rack_3_LOD0, Polygon Count: 62
+Model: Rack_3, Polygon Count: 98
+Model: Chair_2_LOD1, Polygon Count: 200
+Model: Chair_2_LOD0, Polygon Count: 296
+Model: Chair_2 (1), Polygon Count: 254
+Model: Chair_2, Polygon Count: 254
+Model: terrain_), Polygon Count: 536

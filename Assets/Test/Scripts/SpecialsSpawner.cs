@@ -38,13 +38,14 @@ public class SpecialsSpawner : MonoBehaviour
     public void SpawnCollectibles(GameObject road)
     {
       float spawnChance = Random.Range(0, spawnRange);
-      if(spawnChance < spawnPercent && specialCollectibles != null)
+        Debug.Log(spawnChance);
+        if (spawnChance > spawnPercent && specialCollectibles != null)
       {
             if (specialCollectibles.Count > 0)
             {
                 GameObject specials = Instantiate(specialCollectibles[Random.Range(0, specialCollectibles.Count)], GetCollectiblePosition(_collider),
                    Quaternion.identity, road.transform);
-                    Debug.Log("Found");
+                    
 
                 if (PlayerPrefs.GetInt(specials.name) == 1)
                 {

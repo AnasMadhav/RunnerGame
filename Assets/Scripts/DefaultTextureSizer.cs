@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using UnityEditor;
 
 public class DefaultTextureSizer : AssetPostprocessor
@@ -10,4 +10,4 @@ public class DefaultTextureSizer : AssetPostprocessor
         tex_importer.maxTextureSize = 512; //Some other max size than the default
     }
 
-}
+}*/

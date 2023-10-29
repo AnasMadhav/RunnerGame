@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.662
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.25567663, g: 0.5556346, b: 0.6241688, a: 0.662}
+  m_IndirectSpecularColor: {r: 0.2556813, g: 0.5556343, b: 0.6241633, a: 0.662}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5272,7 +5272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8928449916628358856, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1674014971961548067, guid: b69677694010d4b4291ef7666b0385c7, type: 3}
@@ -18691,7 +18691,7 @@ PrefabInstance:
       objectReference: {fileID: 1841571561}
     - target: {fileID: 534529142993560172, guid: 5b43fe94311aeaf4ebb2d2a30876be4d, type: 3}
       propertyPath: maxSpeed
-      value: 35
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 534529142993560172, guid: 5b43fe94311aeaf4ebb2d2a30876be4d, type: 3}
       propertyPath: JumpAudio

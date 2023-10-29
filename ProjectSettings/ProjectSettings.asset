@@ -162,10 +162,11 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.XRHorizon.KRun
     Standalone: com.XR-Horizon.K-Run
+    iPhone: com.XR-Horizon.K-Run
   buildNumber:
     Standalone: 0
     VisionOS: 0
-    iPhone: 0
+    iPhone: 1
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 4

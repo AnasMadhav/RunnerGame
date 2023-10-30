@@ -2055,9 +2055,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930cfc2a79848b94a865123bdbfaafb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSources: []
-  muteButton: {fileID: 0}
-  unmuteButton: {fileID: 0}
+  audioSources:
+  - {fileID: 2017033791}
+  - {fileID: 565281763}
+  - {fileID: 1326418280}
+  muteButton: {fileID: 1388352323}
+  unmuteButton: {fileID: 169483358}
 --- !u!1001 &703700640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3419,7 +3422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.3362, y: 544.95}
+  m_AnchoredPosition: {x: -9.3362, y: 468}
   m_SizeDelta: {x: 925.321, y: 503.519}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1081385936

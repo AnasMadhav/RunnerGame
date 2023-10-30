@@ -3,7 +3,17 @@ guid: dfa7ccdd3a86fb548b7aafb028d66f87
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: L5
+    second: {fileID: 2100000, guid: 647bc5774f0ba9542877baa5c2a09169, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bill_board_3
+    second: {fileID: 2100000, guid: 7aa9b925921a9ea489ff1fb457e7d5ef, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

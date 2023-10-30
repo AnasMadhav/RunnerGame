@@ -3,7 +3,22 @@ guid: 3bfbf26edae96da49938065cf6be3e6f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 5
+    second: {fileID: 2100000, guid: 4922ad74302860e4797c0c05ea35c2bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ADD
+    second: {fileID: 2100000, guid: bc8517ed0229e264281eabb505dc56c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: METRO_PILLER
+    second: {fileID: 2100000, guid: e59f705f9c99efd41858da03893c52e4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

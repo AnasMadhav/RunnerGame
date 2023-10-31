@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.38622552, g: 0.83932674, b: 0.94284487, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1827,7 +1827,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiManager: {fileID: 1778197221}
-  coinCountText: {fileID: 1908049078}
+  coinCountText: {fileID: 1903792155}
+  specialCountText: {fileID: 1920178201}
 --- !u!82 &565281763
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3700,7 +3701,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1171701105
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5728,17 +5729,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903792153}
   m_CullTransparentMesh: 1
---- !u!114 &1908049078 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4684301339740542674, guid: c2c34257cde7ff244ad810ec11e1036b, type: 3}
-  m_PrefabInstance: {fileID: 7228442678716555519}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1920178199
 GameObject:
   m_ObjectHideFlags: 0

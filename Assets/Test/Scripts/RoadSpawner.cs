@@ -20,7 +20,7 @@ public class RoadSpawner : MonoBehaviour
     bool isMidKerala,isNewKerala;
     void Start()
     {
-        distance = PlayerPrefs.GetInt("Distance");
+       // distance = PlayerPrefs.GetInt("Distance");
         coveredRoad = new List<GameObject>();
         ChangeInitialMap(distance);
         isTransition = true;
